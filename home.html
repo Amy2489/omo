@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmyAccessory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
+    <style>
+        .main-background {
+            background-color: black;
+        }
+
+        .background {
+            background-image: url(images/camera-7903435_1280.webp);
+            background-position: center;
+            filter: brightness(80%);
+            height: auto;
+            margin-bottom: 10px;
+            /* background-image: linear-gradient(left black, brown); */
+            background-size: cover;
+        }
+
+        .nav-logo {
+            text-decoration: none;
+            font-size: 25px;
+            color: hsla(0, 0%, 0%, 0.588);
+            font-style: oblique;
+        }
+
+        .nav-list {
+            width: 100%;
+        }
+
+        .a-link {
+            color: black;
+        }
+
+        .a-link:hover {
+            color: orange;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        .ul-list {
+            width: 60%;
+            margin-left: 100px;
+        }
+
+        .nav-icons:hover {
+            color: white;
+        }
+
+        .background-label {
+            width: 50%;
+            margin-top: 490px;
+            margin-left: 10px;
+        }
+
+        .shop {
+            text-decoration: none;
+            color: black;
+        }
+
+        .shop:hover {
+            font-size: 18px;
+            color: orange;
+        }
+
+        .discover {
+            display: flex;
+            justify-content: end;
+        }
+
+        .left {
+            width: 50%;
+            margin-left: 5px;
+            color: white;
+        }
+
+        .right {
+            width: 50%;
+            justify-content: end;
+            display: flex;
+        }
+
+        .img-container {
+            margin: 20px;
+        }
+
+        .img-items {
+            height: 390px;
+            border-radius: 5px;
+            width: 100%;
+            border:3px solid orange;
+        }
+
+        .img-items:hover {
+            cursor: pointer;
+            transform: scale(104%);
+            border-radius: 0px;
+            /* transition-duration:1s; */
+        }
+
+        .img-text {
+            color: white;
+            text-transform: capitalize;
+            font-size: 17px;
+            margin: 10px 0px 30px 0px;
+        }
+
+        .phone-img {
+            height: 580px;
+            border-radius: 5px;
+            box-shadow: 5px 8px 15px rgb(61, 61, 61);
+            margin: 10px 0px 30px 0px;
+            border: 3px solid orange;
+        }
+
+        .phone-img:hover {
+            transform: scale(102%);
+            transition-duration: 1s;
+            cursor: pointer;
+            border-radius: 1px;
+        }
+
+        .laptop-background {
+            margin-top: 30px;
+            height: 600px;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(110%);
+        }
+
+        .laptop-img-content {
+            background-image: linear-gradient(grey, black);
+            color: white;
+            padding-left: 10px;
+            font-weight: lighter;
+            font-size: 20px;
+        }
+
+        .signup-lable {
+            background-color: hsla(0, 0%, 50%, 0.169);
+            padding: 20px;
+            margin-bottom: 80px;
+
+        }
+
+        .signup-lable h3 {
+            color: rgb(190, 182, 182);
+            font-size: 23px;
+            margin-left: 10px;
+            font-weight: lighter;
+        }
+
+        .input {
+            background-color: transparent;
+            width: 80%;
+            height: 43px;
+            margin-left: 10px;
+            color: rgb(190, 182, 182);
+        }
+
+        .signup-lable input:hover {
+            cursor: pointer;
+        }
+
+        .signup-lable label {
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(190, 182, 182);
+            margin-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Submit-btn {
+            background-color: orange;
+            color: white;
+        }
+
+        .Submit-btn:hover {
+            background-color: rgb(255, 166, 0);
+            opacity: 80%;
+            color: white;
+        }
+        .footer-img {
+            /* background-image: url(images/laptop-backgroud.jpg); */
+            background-color: hsla(0, 0%, 50%, 0.169);
+            height: auto;
+            color: lightgrey;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .footer-list {
+            list-style-type: none;
+            color: rgb(190, 182, 182);
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .footer-paraghap-list {
+            color: rgb(190, 182, 182);
+            line-height: 40px;
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        .footer-link {
+            color: rgb(190, 182, 182);
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+
+
+        .footer-link:hover {
+            color: orange;
+        }
+
+        .copy-right {
+            display: flex;
+            justify-content: end;
+            font-weight: bold;
+
+        }
+
+        .copy-right-box {
+            height: 80px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fliud main-background">
+        <div class="container-fliud background">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-xxl">
+                    <a href="home.html" id="top" class="nav-brand nav-logo">
+                        <span><span style="color:orange;">Amy</span>Accessory</span>
+                    </a>
+
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-label=" toggler navigation" aria-controls="main-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse align-items-center justify-content-center navbar-collapse " id="main-nav">
+                        <div class="ul-list">
+                            <ul class="navbar-nav  d-flex">
+                                <li class="nav-list"><a href="Shop.html" class="nav-link a-link ">Shop</a></li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+                                <li class="nav-list"><a href="Mobile.html" class="nav-link a-link ">Mobile</a></li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+                                <li class="nav-list"><a href="Computers.html" class="nav-link a-link ">Computers</a>
+                                </li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+                                <li class="nav-list"><a href="Accessories.html" class="nav-link a-link ">Accessories</a></li>
+                                <li>
+                                    <hr class="divider">
+                                <li class="nav-list"><a href="Appliances.html" class="nav-link a-link ">Appliances</a></li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+                                <li class="nav-list"><a href="contact.html" class="nav-link a-link ">Contact</a></li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- <a href="" class="but-group"><button
+                                class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
+                        <div class="mt-2 mx-lg-5 ">
+                            <i class="fa-solid fa-user nav-icons p-2"></i>
+                            <i class="fa-solid fa-heart nav-icons p-2"></i>
+                            <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container background-label ">
+                <h4 class="display fs-3">Quality items and smart solution for everyday convenience</h4>
+                <span><a href="shop.html" class="shop">[Shop Now]</a></span>
+            </div>
+        </div>
+        <main>
+            <div class="container-fliud discover text-dark mt-4">
+                <div class="left">Trendings</div>
+                <div class="right"><a href="Accessories.html" class="shop text-white me-2">[Discover More]</a></div>
+            </div>
+            <section>
+                <div class="container-fliud img-container">
+                    <div class="row gy-4 mx-sm-3">
+                        <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12">
+                          <a href="each-products/bluetooth2.html"> <img src="/images/bluetooth.jpg" class="w-100 img-items" alt=""></a>
+                            <div class="img-text">
+                                <h5>potable bluetooth speaker</h5>
+                                <span>$7000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12">
+                          <a href="/each-products/camera1.html">  <img src="/images/cam1,1.webp" class="w-100 img-items" alt=""></a>
+                            <div class="img-text">
+                                <h5> small potable camera</h5>
+                                <span>$7000</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12">
+                          <a href="each-products/earbud1.html">  <img src="/images/pod3,1.webp" class="w-100 img-items" alt=""></a>
+                            <div class="img-text">
+                                <h5>wireless earbud headphones</h5>
+                                <span>$7000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12">
+                           <a href="/each-products/mouse1.html"><img src="images/mouse2,1.webp" class="w-100 img-items" alt=""></a>
+                            <div class="img-text">
+                                <h5> small potable mouse</h5>
+                                <span>$7000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-light mx-3">
+                </div>
+                <div class="container-fliud mx-5">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img src="image/redmi.jpg" class="w-100 phone-img" alt="">
+                            <div class="img-text">
+                                <h5>Quality Apple produts</h5>
+                                <span>Avaliable in different types</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img src="image/oppo.jpg" class="w-100 phone-img" alt="">
+                            <div class="img-text">
+                                <h5>Quality Samsung produts</h5>
+                                <span>Avaliable in different types</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-light mx-3">
+                </div>
+            </section>
+            <section>
+                <img src="images/laptop-3.jpg" class="w-100 laptop-background" alt="">
+                <div class="laptop-img-content">
+                    <h3>Laptops avaliable at afforable prizes</h3>
+                    <span><a href="" class="shop text-light">[Shop Now]</a></span>
+                </div>
+                <hr class="text-light mx-4 mb-5">
+
+                <div class="container-fliud mx-4 signup-lable">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-sm-12 mt-lg-4">
+                            <h3>SIGN UP TO RECEIVE UPDATES ON NEW PRODUCTS AND SPECIAL OFFERS</h3>
+                        </div>
+                        <div class="col-12 col-md-6 col-sm-12 mt-lg-4 mt-sm-3">
+                            <form action="">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control input" required>
+                                <input type="checkbox" id="checkbox" class="form-check-input p-2 ms-2" required><span
+                                    class="mx-1 text-white">Yes, subscribe me to your newsOffers.</span>
+                                <br>
+                                <button class="btn mt-3 Submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-fliud footer-img">
+                <div class="container-fliud mx-4">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-5 ">
+                            <h3 class="mt-5 ms-5 text-capitalize">Amy Eletronics Accessories</h3>
+                            <p class="footer-paraghap-list mt-4">Welcome to Amy Accessories, your trusted destination
+                                for high quality eletronic accessories. We stand behind our produts with 6-months
+                                guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
+                                eletronic devices easily accessible to eyeryone</p>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-2 fs-md-5">
+                            <h3 class="mt-5 ms-3 text-capitalize">Menu</h3>
+                            <ul>
+                                <li class="footer-list mt-4"><a href="shop.html" class="footer-link">Shop</a></li>
+                                <li class="footer-list"><a href="Mobile.html" class="footer-link">Mobile</a></li>
+                                <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
+                                <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
+                                </li>
+                                <li class="footer-list"><a href="Appliances.html" class="footer-link">Appliances</a>
+                                </li>
+                                <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-5 col-md-5">
+                            <h3 class="mt-5 ms-5 text-capitalize">INFO</h3>
+                            <ul>
+                                <li class="footer-list mt-4">Adderss: Kwankwashe Street, opposite IBB market Niger</li>
+                                <li class="footer-list">State: Niger State</li>
+                                <li class="footer-list">Email: amyogechi@gmail.com</li>
+                                <li class="footer-list">Phone: 234-812-099-1981</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copy-right-box">
+                    <div class="row">
+                        <div class="col">
+                            <div class="col-3 "><span class="copy-right">&copy; 2025 by AmyAccessory</span></div>
+                        </div>
+                        <!-- <div class="col-12 col-lg-3 col-md-3">
+                        <h3 class="mt-4 text-capitalize">Socail media</h3>
+                    </div> -->
+                    </div>
+                </div>
+                <span><a href="#top" class="text-light btn btn-dark">Back to Top</a></span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

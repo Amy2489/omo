@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
+    <title>Shop with Us</title>
+    <style>
+        .background {
+            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791), hsla(0, 0%, 0%, 0.791));
+        }
+
+        .nav-logo {
+            text-decoration: none;
+            font-size: 25px;
+            color: hsla(0, 0%, 0%, 0.588);
+            font-style: oblique;
+        }
+
+        .nav-list {
+            width: 100%;
+        }
+
+        .a-link {
+            color: white;
+        }
+
+        .a-link:hover {
+            color: orange;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        .ul-list {
+            width: 60%;
+            margin-left: 100px;
+        }
+
+        .nav-icons:hover {
+            color: white;
+        }
+
+        .main-list {
+            list-style-type: none;
+            margin-top: 15px;
+        }
+
+        .main-links {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+
+        }
+
+        .main-links:hover {
+            color: orange;
+        }
+
+        .shop {
+            color: orange;
+        }
+
+        .main-link-header {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-link-header:hover {
+            color: orange;
+        }
+
+        .main-container {
+            width: 100%;
+        }
+
+        .img-item {
+            height: 480px;
+            width: 100%;
+            border-radius: 10px;
+            border: 5px solid orange;
+            background-color: hsla(0, 0%, 100%, 0.59);
+        }
+        .left {
+            color: white;
+            align-items:baseline;
+            display: flex;
+        }
+
+        .right {
+            justify-content: end;
+            align-items:baseline;
+            display: flex;
+        }
+
+        .img-item:hover {
+            transform: scale(102%);
+            transition-duration: 1s;
+            cursor: pointer;
+            border-radius: 1px;
+        }
+        .shop-more {
+            text-decoration: none;
+            color: black;
+        }
+
+        .shop-more:hover {
+            font-size: 18px;
+            color: orange;
+        }
+
+        .line {
+            width: 95%;
+        }
+        footer {
+            margin-top: 150px;
+        }
+
+        .footer-img {
+            /* background-image: url(images/laptop-backgroud.jpg); */
+            background-color: hsla(0, 0%, 50%, 0.382);
+            height: auto;
+            color: lightgrey;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .footer-list {
+            list-style-type: none;
+            color: black;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .footer-paraghap-list {
+            color: black;
+            line-height: 40px;
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        .footer-link {
+            color: black;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+
+
+        .footer-link:hover {
+            color: orange;
+        }
+
+        .copy-right {
+            display: flex;
+            justify-content: end;
+            font-weight: bold;
+
+        }
+
+        .copy-right-box {
+            height: 80px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fliud background">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-xxl">
+                <a href="home.html" id="top" class="nav-brand nav-logo">
+                    <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
+                </a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-label=" toggler navigation" aria-controls="main-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse align-items-center justify-content-center navbar-collapse " id="main-nav">
+                    <div class="ul-list">
+                        <ul class="navbar-nav  d-flex">
+                            <li class="nav-list"><a href="shop.html" class="nav-link a-link ">Shop</a></li>
+                            <li>
+                                <hr class="divider">
+                            </li>
+                            <li class="nav-list"><a href="Mobile.html" class="nav-link a-link ">Mobile</a></li>
+                            <li>
+                                <hr class="divider">
+                            </li>
+                            <li class="nav-list"><a href="Computers.html" class="nav-link a-link ">Computers</a>
+                            </li>
+                            <li>
+                                <hr class="divider">
+                            </li>
+                            <li class="nav-list"><a href="Accessories.html" class="nav-link a-link ">Accessories</a>
+                            </li>
+                            <hr class="divider">
+                            </li>
+                            <li class="nav-list"><a href="contact.html" class="nav-link a-link ">Contact</a></li>
+                            <li>
+                                <hr class="divider">
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- <a href="" class="but-group"><button
+                                class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
+                    <div class="mt-2 mx-lg-5 ">
+                        <i class="fa-solid fa-user nav-icons p-2"></i>
+                        <i class="fa-solid fa-heart nav-icons p-2"></i>
+                        <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="mt-4">
+                <div class="container-fliud">
+                    <div class="row mx-2 mx-md-1">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="home.html" class=" main-link-header">Home</a></li>
+                                <li class="breadcrumb-item text-light">Cell Phones</li>
+                            </ul>
+                            <ul>
+                                <li class="main-list mt-5"><a href="shop.html" class="main-links shop">Shop</a>
+                                </li>
+                                <li class="main-list"><a href="Mobile.html" class="main-links">Mobile</a></li>
+                                <li class="main-list"><a href="Computers.html" class="main-links">Computers</a></li>
+                                <li class="main-list"><a href="Accessories.html" class="main-links">Accessories</a></li>
+                                <li class="main-list"><a href="Appliances.html" class="main-links">Appliances</a></li>
+                                <li class="main-list"><a href="contact.html" class="main-links">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-8 mt-3">
+                            <div class="container-fliud">
+                                <span class="fs-4 text-light">Produts with set</span>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/set1.html"> <img src="images/set.jpg" class="img-item"
+                                                alt=""></a>
+                                        <div>
+                                            <h2 class="text-light">ipone</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/set2.html"> <img src="images/iset.jpg" class="img-item"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/set3.html"> <img src="images/pink iset.jpg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                </div>
+                                   <hr class="text-light line mt-5">
+                                <div class="row">
+                                <span class="fs-4 text-light left">Mobile Phone Products</span>
+                                <span class="right"><a href="Mobile.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/redmi.html"><img src="image/redmi.jpg" class="img-item"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/oppo.html"> <img src="image/oppo.jpg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/oppox7.html"> <img src="image/oppo x7.jpg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                </div>
+                                <hr class="text-light line mt-5">
+                                <div class="row">
+                                    <span class="fs-4 text-light left">Computer Devices</span>
+                                    <span class="right"><a href="Computers.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/hp3.html"> <img src="image/laptop (7).jpeg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/apple-coloured-laptop.html"> <img src="image/laptop (1).jpeg" class="img-item"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                                <hr class="text-light line mt-5">
+                                <div class="row">
+                                    <span class="fs-4 text-light left">Home Appliances</span>
+                                    <span class="right"><a href="Appliances.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/blander.html"> <img
+                                            src="image/decker powechrush blender.jpg" class="img-item" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/lg-frige.html"><img src="image/lg frige 20.2-cu.jpg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/eletric-kettle.html"> <img src="image/eletric kettle.jpg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                </div>
+                                <hr class="text-light line mt-5">
+                                <div class="row">
+                                    <span class="fs-4 text-light left">Other Accessories</span>
+                                    <span class="right"><a href="Accessories.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/earbud2.html"> <img src="image/jbl buds.jpg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                        <a href="/each-products/charger2.html"><img src="image/charger (1).jpeg"
+                                                class="img-item" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-fliud footer-img">
+                <div class="container-fliud mx-4">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-5 ">
+                            <h3 class="mt-5 ms-5 text-capitalize">Amy Eletronics Accessories</h3>
+                            <p class="footer-paraghap-list mt-4">Welcome to Amy Accessories, your trusted destination
+                                for high quality eletronic accessories. We stand behind our produts with 6-months
+                                guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
+                                eletronic devices easily accessible to eyeryone</p>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-2 fs-md-5">
+                            <h3 class="mt-5 ms-3 text-capitalize">Menu</h3>
+                            <ul>
+                                <li class="footer-list mt-4"><a href="shop.html" class="footer-link">Shop</a></li>
+                                <li class="footer-list"><a href="#top" class="footer-link">Mobile</a></li>
+                                <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
+                                <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
+                                </li>
+                                <li class="footer-list"><a href="Appliances.html" class="footer-link">Appliances</a>
+                                </li>
+                                <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-5 col-md-5">
+                            <h3 class="mt-5 ms-5 text-capitalize">INFO</h3>
+                            <ul>
+                                <li class="footer-list mt-4">Adderss: Kwankwashe Street, opposite IBB market Niger</li>
+                                <li class="footer-list">State: Niger State</li>
+                                <li class="footer-list">Email: amyogechi@gmail.com</li>
+                                <li class="footer-list">Phone: 234-812-099-1981</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copy-right-box">
+                    <div class="row">
+                        <div class="col">
+                            <div class="col-3 "><span class="copy-right">&copy; 2025 by AmyAccessory</span></div>
+                        </div>
+                        <!-- <div class="col-12 col-lg-3 col-md-3">
+                        <h3 class="mt-4 text-capitalize">Socail media</h3>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
