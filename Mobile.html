@@ -16,10 +16,11 @@
         }
 
         .background {
-            /* background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791), hsla(0, 0%, 0%, 0.791)); */
             background-color: black;
         }
-
+        nav{
+            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791), hsla(0, 0%, 0%, 0.791));
+        }
         .nav-logo {
             text-decoration: none;
             font-size: 25px;
@@ -51,6 +52,10 @@
 
         .nav-icons:hover {
             color: white;
+        }
+
+        .content-container {
+            margin: 0px 10px;
         }
 
         .main-list {
@@ -106,14 +111,16 @@
         }
 
         .footer-img {
-            /* background-image: url(images/laptop-backgroud.jpg); */
-            /* background-color: hsla(0, 0%, 50%, 0.382); */
             background-color: hsla(0, 0%, 50%, 0.169);
             height: auto;
             color: lightgrey;
             width: 100%;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        .footer-header {
+            margin: 50px 30px 0px 30px
         }
 
         .footer-list {
@@ -123,12 +130,15 @@
             font-size: 18px;
             font-weight: lighter;
         }
+        .footer-list2 {
+            margin-top: 40px;
+        }
 
         .footer-paraghap-list {
             color: lightgrey;
             line-height: 40px;
             width: 80%;
-            margin: 0px auto;
+           margin-left: 20px;
         }
 
         .footer-link {
@@ -154,6 +164,113 @@
         .copy-right-box {
             height: 80px;
             margin-top: 50px;
+        }
+
+        @media (max-width:780px) {
+            .main-links {
+                font-size: 16px;
+            }
+
+            .main-list {
+                margin-top: 10px;
+            }
+
+            .footer-list {
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            .footer-paraghap-list {
+                line-height:30px;
+            }
+
+            .footer-link {
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            .footer-header {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width:765px) {
+            
+        .footer-link {
+            line-height:27px;
+            font-size:16px;
+        }
+        .footer-header{
+            font-size: 18px;
+            font-weight: bolder;
+            margin-top:15px; 
+        }
+        .footer-list2{
+            margin-top:10px;
+        }
+        }
+
+        @media (max-width:500px) {
+            .img-item {
+                height: 400px;
+            }
+
+        }
+
+        @media (max-width:400px) {
+            .main-list {
+                margin-top: 5px;
+                margin-left: 0px;
+            }
+
+            .content-container {
+                margin: 0px;
+            }
+
+            .main-links {
+                font-size: 14px;
+
+            }
+
+            .img-item {
+                height: 350px;
+            }
+
+            .footer-list {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .footer-paraghap-list {
+                line-height: 25px;
+            }
+
+            .footer-link {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .footer-header {
+                font-size: 18px;
+                font-weight: bolder;
+                margin-top: 15px;
+            }
+
+            .footer-list2 {
+                margin-top: 12px;
+            }
+        }
+
+        @media (max-width:350px) {
+            .main-links {
+                font-size: 11px;
+            }
+
+            .main-list {
+                margin-top: 2px;
+                margin-left: 0px;
+            }
         }
     </style>
     <title>Mobiles Phones</title>
@@ -201,7 +318,7 @@
                     <!-- <a href="" class="but-group"><button
                             class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
                     <div class="mt-2 mx-lg-5 ">
-                        <i class="fa-solid fa-user nav-icons p-2"></i>
+                        <i class="fa-solid fa-user nav-icons p-2 " id="login"></i>
                         <i class="fa-solid fa-heart nav-icons p-2"></i>
                         <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
                     </div>
@@ -211,8 +328,8 @@
         <main>
             <section class="mt-4">
                 <div class="container-fliud">
-                    <div class="row mx-2 mx-md-1">
-                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
+                    <div class="row mx-md-1 content-container">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4 link-container">
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html" class=" main-link-header">Home</a></li>
                                 <li class="breadcrumb-item text-light">Cell Phones</li>
@@ -220,7 +337,7 @@
                             <ul>
                                 <li class="main-list mt-5"><a href="Mobile.html" class="main-links moblie">Mobile</a>
                                 </li>
-                                <li class="main-list"><a href="shop.html" class="main-links">Shop</a></li>
+                                <li class="main-list "><a href="shop.html" class="main-links">Shop</a></li>
                                 <li class="main-list"><a href="Computers.html" class="main-links">Computers</a></li>
                                 <li class="main-list"><a href="Accessories.html" class="main-links">Accessories</a></li>
                                 <li class="main-list"><a href="Appliances.html" class="main-links">Appliances</a></li>
@@ -274,20 +391,22 @@
             </section>
         </main>
         <footer>
+            <!-- footer -->
             <div class="container-fliud footer-img">
                 <div class="container-fliud mx-4">
                     <div class="row">
-                        <div class="col-12 col-lg-5 col-md-5 ">
-                            <h3 class="mt-5 ms-5 text-capitalize">Amy Eletronics Accessories</h3>
-                            <p class="footer-paraghap-list mt-4">Welcome to Amy Accessories, your trusted destination
+                        <div class="col-12 col-lg-5 col-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">Amy Eletronics Accessories</h3>
+                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted destination
                                 for high quality eletronic accessories. We stand behind our produts with 6-months
                                 guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
                                 eletronic devices easily accessible to eyeryone</p>
                         </div>
-                        <div class="col-12 col-lg-2 col-md-2 fs-md-5">
-                            <h3 class="mt-5 ms-3 text-capitalize">Menu</h3>
+                        <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">Menu</h3>
                             <ul>
-                                <li class="footer-list mt-4"><a href="shop.html" class="footer-link">Shop</a></li>
+                                <li class="footer-list footer-list2"><a href="shop.html" class="footer-link">Shop</a>
+                                </li>
                                 <li class="footer-list"><a href="#top" class="footer-link">Mobile</a></li>
                                 <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
                                 <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
@@ -297,10 +416,11 @@
                                 <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
                             </ul>
                         </div>
-                        <div class="col-12 col-lg-5 col-md-5">
-                            <h3 class="mt-5 ms-5 text-capitalize">INFO</h3>
+                        <div class="col-12 col-lg-5 col-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">INFO</h3>
                             <ul>
-                                <li class="footer-list mt-4">Adderss: Kwankwashe Street, opposite IBB market Niger</li>
+                                <li class="footer-list footer-list2">Adderss: Kwankwashe Street, opposite IBB market
+                                    Niger</li>
                                 <li class="footer-list">State: Niger State</li>
                                 <li class="footer-list">Email: amyogechi@gmail.com</li>
                                 <li class="footer-list">Phone: 234-812-099-1981</li>
@@ -322,6 +442,12 @@
             </div>
         </footer>
     </div>
+
+
+    <script>
+        let login = document.getElementById('login');
+
+    </script>
 </body>
 
 </html>
