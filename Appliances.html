@@ -47,9 +47,23 @@
             width: 60%;
             margin-left: 100px;
         }
+        .nav-icons{
+            color:white;
+        }
 
         .nav-icons:hover {
+            color: orange;
+        }
+        .link{
+            display:none;
+        }
+      
+        .login-link {
+            font-size:15px;
             color: white;
+        }
+        .login-link:hover{
+            color: orange;
         }
 
         .main-list {
@@ -302,9 +316,16 @@
                     <!-- <a href="" class="but-group"><button
                         class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
                     <div class="mt-2 mx-lg-5 ">
-                        <i class="fa-solid fa-user nav-icons p-2"></i>
                         <i class="fa-solid fa-heart nav-icons p-2"></i>
                         <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
+                        <i class="fa-solid fa-user nav-icons p-2" id="user"> </i>
+                        <div class="link" id="login">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" class="login-link">Login</a></li>
+                                <li class="breadcrumb-item text-light"> <a href="#" class="login-link">Sign In</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -418,6 +439,15 @@
             </div>
         </footer>
     </div>
+
+    <!-- JS code -->
+    <script>
+        let login = document.getElementById('login');
+        let user = document.getElementById('user')
+        user.addEventListener('click', () => {
+            login.classList.toggle('link')
+        })
+    </script>
 </body>
 
 </html>

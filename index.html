@@ -56,9 +56,28 @@
             margin-left: 100px;
         }
 
+        .nav-icons-container {
+            width: 20%;
+        }
+
         /* nav icons */
+        .nav-icons{
+            color:black;
+        }
+
         .nav-icons:hover {
+            color: orange;
+        }
+        .link{
+            display:none;
+        }
+      
+        .login-link {
+            font-size:15px;
             color: white;
+        }
+        .login-link:hover{
+            color: orange;
         }
 
         .background-label {
@@ -289,12 +308,13 @@
             .footer-list2 {
                 margin-top: 10px;
             }
+
             .phone-img {
-                height:550px;
+                height: 550px;
             }
 
             .laptop-background {
-                margin-top:5px;
+                margin-top: 5px;
                 height: 400px;
                 object-fit: cover;
                 width: 100%;
@@ -305,23 +325,26 @@
             }
 
             .signup-lable {
-                margin-bottom:50px;
+                margin-bottom: 50px;
 
             }
 
             .signup-lable h3 {
                 font-size: 16px;
             }
+
             .background {
-            width:100%;
-        }
-        .background-label {
-            margin-top:400px;
-            margin-left:5px;
-        }
-        .background-label h4{
-       font-size:15px;
-        }
+                width: 100%;
+            }
+
+            .background-label {
+                margin-top: 400px;
+                margin-left: 5px;
+            }
+
+            .background-label h4 {
+                font-size: 15px;
+            }
         }
 
         @media (max-width:500px) {
@@ -363,16 +386,20 @@
             .signup-lable h3 {
                 font-size: 14px;
             }
+
             .background {
-            width: 100%;
-        }
-        .background-label {
-            margin-top: 300px;
-            margin-left:5px;
-        }
-        .background-label h4{
-       font-size:12px;
-        }
+                width: 100%;
+            }
+
+            .background-label {
+                margin-top: 300px;
+                margin-left: 5px;
+            }
+
+            .background-label h4 {
+                font-size: 12px;
+            }
+
             .footer-list {
                 line-height: 25px;
                 font-size: 14px;
@@ -397,6 +424,7 @@
                 margin-top: 12px;
             }
         }
+
     </style>
 </head>
 
@@ -447,10 +475,17 @@
                         </div>
                         <!-- <a href="" class="but-group"><button
                                 class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
-                        <div class="mt-2 mx-lg-5 ">
-                            <i class="fa-solid fa-user nav-icons p-2"></i>
+                        <div class="mt-2 mx-lg-5 nav-icons-container">
                             <i class="fa-solid fa-heart nav-icons p-2"></i>
                             <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
+                            <i class="fa-solid fa-user nav-icons p-2" id="user"> </i>
+                            <div class="link" id="login">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="login-link">Login</a></li>
+                                    <li class="breadcrumb-item text-light"> <a href="#" class="login-link">Sign In</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -602,6 +637,13 @@
         </footer>
     </div>
 
+    <script>
+        let login = document.getElementById('login');
+        let user = document.getElementById('user')
+        user.addEventListener('click', () => {
+            login.classList.toggle('link')
+        })
+    </script>
 </body>
 
 </html>
