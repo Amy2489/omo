@@ -18,7 +18,7 @@
         }
 
         nav {
-            margin-bottom: 100px;
+            margin-bottom:80px;
         }
 
         .nav-logo {
@@ -103,10 +103,6 @@
         footer{
             height: auto;
         }
-        footer {
-            margin-top: 150px;
-        }
-
         .footer-img {
             background-color: hsla(0, 0%, 50%, 0.169);
             height: auto;
@@ -161,6 +157,101 @@
         .copy-right-box {
             height: 80px;
             margin-top: 50px;
+        }
+
+        @media (max-width:780px) {
+            .footer-list {
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            .footer-paraghap-list {
+                line-height:30px;
+            }
+
+            .footer-link {
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            .footer-header {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width:765px) {
+            
+        .footer-link {
+            line-height:27px;
+            font-size:16px;
+        }
+        .footer-header{
+            font-size: 18px;
+            font-weight: bolder;
+            margin-top:15px; 
+        }
+        .footer-list2{
+            margin-top:10px;
+        }
+        .logo {
+            margin-bottom:30px;
+            font-size:23px;
+        }
+
+        .contact {
+            font-size:18px;
+            margin-bottom:15px;
+        }
+        .contact-button{
+            width:130px;
+            height:43px;
+            margin-bottom:0px;
+        }
+        
+        nav {
+            margin-bottom:30px;
+        }
+
+        }
+        @media (max-width:400px) {
+            .footer-list {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .footer-paraghap-list {
+                line-height: 25px;
+            }
+
+            .footer-link {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .footer-header {
+                font-size: 18px;
+                font-weight: bolder;
+                margin-top: 15px;
+            }
+
+            .footer-list2 {
+                margin-top: 12px;
+            }
+            .logo {
+            margin-bottom:20px;
+            font-size:20px;
+        }
+
+        .contact {
+            font-size: 15px;
+            margin-bottom:15px;
+        }
+        .contact-button{
+            width:100px;
+            height: 40px;
+            margin-bottom:0px;
+        }
         }
     </style>
 </head>
@@ -254,33 +345,36 @@
         </div>
         <hr class="text-light mt-5">
         <footer>
+            <!-- footer -->
             <div class="container-fliud footer-img">
                 <div class="container-fliud mx-4">
                     <div class="row">
-                        <div class="col-12 col-lg-5 col-md-5 ">
-                            <h3 class="mt-5 ms-5 text-capitalize">Amy Eletronics Accessories</h3>
-                            <p class="footer-paraghap-list mt-4">Welcome to Amy Accessories, your trusted destination
+                        <div class="col-12 col-lg-5 col-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">Amy Eletronics Accessories</h3>
+                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted destination
                                 for high quality eletronic accessories. We stand behind our produts with 6-months
                                 guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
                                 eletronic devices easily accessible to eyeryone</p>
                         </div>
-                        <div class="col-12 col-lg-2 col-md-2 fs-md-5">
-                            <h3 class="mt-5 ms-3 text-capitalize">Menu</h3>
+                        <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">Menu</h3>
                             <ul>
-                                <li class="footer-list mt-4"><a href="shop.html" class="footer-link">Shop</a></li>
-                                <li class="footer-list"><a href="Mobile.html" class="footer-link">Mobile</a></li>
+                                <li class="footer-list footer-list2"><a href="shop.html" class="footer-link">Shop</a>
+                                </li>
+                                <li class="footer-list"><a href="#top" class="footer-link">Mobile</a></li>
                                 <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
                                 <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
                                 </li>
                                 <li class="footer-list"><a href="Appliances.html" class="footer-link">Appliances</a>
                                 </li>
-                                <li class="footer-list"><a href="#top" class="footer-link">Contact</a></li>
+                                <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
                             </ul>
                         </div>
-                        <div class="col-12 col-lg-5 col-md-5">
-                            <h3 class="mt-5 ms-5 text-capitalize">INFO</h3>
+                        <div class="col-12 col-lg-5 col-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">INFO</h3>
                             <ul>
-                                <li class="footer-list mt-4">Adderss: Kwankwashe Street, opposite IBB market Niger</li>
+                                <li class="footer-list footer-list2">Adderss: Kwankwashe Street, opposite IBB market
+                                    Niger</li>
                                 <li class="footer-list">State: Niger State</li>
                                 <li class="footer-list">Email: amyogechi@gmail.com</li>
                                 <li class="footer-list">Phone: 234-812-099-1981</li>

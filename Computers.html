@@ -13,7 +13,7 @@
     <title>Computers</title>
     <style>
         .background {
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791), hsla(0, 0%, 0%, 0.791));
+            background-color: black;
         }
 
         .nav-logo {
@@ -21,6 +21,9 @@
             font-size: 25px;
             color: hsla(0, 0%, 0%, 0.588);
             font-style: oblique;
+        }
+        nav{
+            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811),hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
         }
 
         .nav-list {
@@ -45,6 +48,9 @@
             color: white;
         }
         .nav-icons:hover {
+            color: orange;
+        }
+        .menu-icon{
             color: orange;
         }
 
@@ -95,11 +101,6 @@
         footer {
             margin-top: 150px;
         }
-
-        footer {
-            margin-top: 150px;
-        }
-
         .footer-img {
             background-color: hsla(0, 0%, 50%, 0.169);
             height: auto;
@@ -155,6 +156,113 @@
             height: 80px;
             margin-top: 50px;
         }
+
+        @media (max-width:780px) {
+            .main-links {
+                font-size: 16px;
+            }
+
+            .main-list {
+                margin-top: 10px;
+            }
+
+            .footer-list {
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            .footer-paraghap-list {
+                line-height:30px;
+            }
+
+            .footer-link {
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            .footer-header {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width:765px) {
+            
+        .footer-link {
+            line-height:27px;
+            font-size:16px;
+        }
+        .footer-header{
+            font-size: 18px;
+            font-weight: bolder;
+            margin-top:15px; 
+        }
+        .footer-list2{
+            margin-top:10px;
+        }
+        }
+
+        @media (max-width:500px) {
+            .img-item {
+                height: 400px;
+            }
+
+        }
+
+        @media (max-width:400px) {
+            .main-list {
+                margin-top: 5px;
+                margin-left: 0px;
+            }
+
+            .content-container {
+                margin: 0px;
+            }
+
+            .main-links {
+                font-size: 14px;
+
+            }
+
+            .img-item {
+                height: 350px;
+            }
+
+            .footer-list {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .footer-paraghap-list {
+                line-height: 25px;
+            }
+
+            .footer-link {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .footer-header {
+                font-size: 18px;
+                font-weight: bolder;
+                margin-top: 15px;
+            }
+
+            .footer-list2 {
+                margin-top: 12px;
+            }
+        }
+
+        @media (max-width:350px) {
+            .main-links {
+                font-size: 11px;
+            }
+
+            .main-list {
+                margin-top: 2px;
+                margin-left: 0px;
+            }
+        }
     </style>
 </head>
 
@@ -166,7 +274,7 @@
                     <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
                 </a>
 
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                <button class="navbar-toggler menu-icon" data-bs-toggle="collapse" data-bs-target="#main-nav"
                     aria-label=" toggler navigation" aria-controls="main-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -274,20 +382,22 @@
             </section>
         </main>
         <footer>
+            <!-- footer -->
             <div class="container-fliud footer-img">
                 <div class="container-fliud mx-4">
                     <div class="row">
-                        <div class="col-12 col-lg-5 col-md-5 ">
-                            <h3 class="mt-5 ms-5 text-capitalize">Amy Eletronics Accessories</h3>
-                            <p class="footer-paraghap-list mt-4">Welcome to Amy Accessories, your trusted destination
+                        <div class="col-12 col-lg-5 col-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">Amy Eletronics Accessories</h3>
+                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted destination
                                 for high quality eletronic accessories. We stand behind our produts with 6-months
                                 guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
                                 eletronic devices easily accessible to eyeryone</p>
                         </div>
-                        <div class="col-12 col-lg-2 col-md-2 fs-md-5">
-                            <h3 class="mt-5 ms-3 text-capitalize">Menu</h3>
+                        <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">Menu</h3>
                             <ul>
-                                <li class="footer-list mt-4"><a href="shop.html" class="footer-link">Shop</a></li>
+                                <li class="footer-list footer-list2"><a href="shop.html" class="footer-link">Shop</a>
+                                </li>
                                 <li class="footer-list"><a href="#top" class="footer-link">Mobile</a></li>
                                 <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
                                 <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
@@ -297,10 +407,11 @@
                                 <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
                             </ul>
                         </div>
-                        <div class="col-12 col-lg-5 col-md-5">
-                            <h3 class="mt-5 ms-5 text-capitalize">INFO</h3>
+                        <div class="col-12 col-lg-5 col-md-5 footer-container">
+                            <h3 class=" text-capitalize  footer-header">INFO</h3>
                             <ul>
-                                <li class="footer-list mt-4">Adderss: Kwankwashe Street, opposite IBB market Niger</li>
+                                <li class="footer-list footer-list2">Adderss: Kwankwashe Street, opposite IBB market
+                                    Niger</li>
                                 <li class="footer-list">State: Niger State</li>
                                 <li class="footer-list">Email: amyogechi@gmail.com</li>
                                 <li class="footer-list">Phone: 234-812-099-1981</li>
@@ -323,5 +434,4 @@
         </footer>
     </div>
 </body>
-
 </html>
