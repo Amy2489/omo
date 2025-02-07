@@ -12,12 +12,19 @@
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
     <title>Shop with Us</title>
     <style>
+         body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
         .background {
-           background-color: black;
+            background-color: black;
         }
-        nav{
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811),hsla(240, 100%, 50%, 0.811),hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
+
+        nav {
+            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
         }
+
         .nav-logo {
             text-decoration: none;
             font-size: 25px;
@@ -43,28 +50,32 @@
             width: 60%;
             margin-left: 100px;
         }
-        .menu-icon{
+
+        .menu-icon {
             color: orange;
         }
 
-        .nav-icons{
-            color:white;
+        .nav-icons {
+            color: white;
         }
 
         .nav-icons:hover {
             color: orange;
         }
-        .link{
-            display:none;
+
+        .link {
+            display: none;
         }
-      
+
         .login-link {
-            font-size:15px;
+            font-size: 15px;
             color: white;
         }
-        .login-link:hover{
+
+        .login-link:hover {
             color: orange;
         }
+
         .main-list {
             list-style-type: none;
             margin-top: 15px;
@@ -99,21 +110,23 @@
         }
 
         .img-item {
-            height: 480px;
+            height: 350px;
             width: 100%;
+            object-fit: cover;
             border-radius: 10px;
             border: 5px solid orange;
             background-color: hsla(0, 0%, 100%, 0.59);
         }
+
         .left {
             color: white;
-            align-items:baseline;
+            align-items: baseline;
             display: flex;
         }
 
         .right {
             justify-content: end;
-            align-items:baseline;
+            align-items: baseline;
             display: flex;
         }
 
@@ -123,9 +136,10 @@
             cursor: pointer;
             border-radius: 1px;
         }
+
         .shop-more {
             text-decoration: none;
-            color: black;
+            color:orange;
         }
 
         .shop-more:hover {
@@ -136,9 +150,11 @@
         .line {
             width: 95%;
         }
+
         footer {
             margin-top: 150px;
         }
+
         footer {
             margin-top: 150px;
         }
@@ -163,6 +179,7 @@
             font-size: 18px;
             font-weight: lighter;
         }
+
         .footer-list2 {
             margin-top: 40px;
         }
@@ -171,7 +188,7 @@
             color: lightgrey;
             line-height: 40px;
             width: 80%;
-           margin-left: 20px;
+            margin-left: 20px;
         }
 
         .footer-link {
@@ -198,6 +215,7 @@
             height: 80px;
             margin-top: 50px;
         }
+
         @media (max-width:780px) {
             .main-links {
                 font-size: 16px;
@@ -213,7 +231,7 @@
             }
 
             .footer-paraghap-list {
-                line-height:30px;
+                line-height: 30px;
             }
 
             .footer-link {
@@ -228,26 +246,33 @@
         }
 
         @media (max-width:765px) {
-            
-        .footer-link {
-            line-height:27px;
-            font-size:16px;
-        }
-        .footer-header{
-            font-size: 18px;
-            font-weight: bolder;
-            margin-top:15px; 
-        }
-        .footer-list2{
-            margin-top:10px;
-        }
+
+            .footer-link {
+                line-height: 27px;
+                font-size: 16px;
+            }
+
+            .footer-header {
+                font-size: 18px;
+                font-weight: bolder;
+                margin-top: 15px;
+            }
+
+            .footer-list2 {
+                margin-top: 10px;
+            }
         }
 
-        @media (max-width:500px) {
+        /* @media (max-width:500px) {
             .img-item {
                 height: 400px;
             }
 
+        } */
+        @media (max-width:500px) {
+            .img-item {
+                height: 250px;
+            }
         }
 
         @media (max-width:400px) {
@@ -265,8 +290,11 @@
 
             }
 
-            .img-item {
+            /* .img-item {
                 height: 350px;
+            } */
+            .img-item {
+                height: 200px;
             }
 
             .footer-list {
@@ -289,7 +317,7 @@
                 margin-top: 15px;
             }
 
-            .footer-list2{
+            .footer-list2 {
                 margin-top: 12px;
             }
         }
@@ -352,13 +380,14 @@
                         <i class="fa-solid fa-heart nav-icons p-2"></i>
                         <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
                         <i class="fa-solid fa-user nav-icons p-2" id="user"> </i>
-                            <div class="link" id="login">
-                                <ul class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="login.html" class="login-link">Login</a></li>
-                                    <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign In</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="link" id="login">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="login.html" class="login-link">Login</a></li>
+                                <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign
+                                        In</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -368,10 +397,6 @@
                 <div class="container-fliud">
                     <div class="row mx-2 mx-md-1 content-container">
                         <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html" class=" main-link-header">Home</a></li>
-                                <li class="breadcrumb-item text-light">Shop</li>
-                            </ul>
                             <ul>
                                 <li class="main-list mt-5"><a href="shop.html" class="main-links shop">Shop</a>
                                 </li>
@@ -387,32 +412,32 @@
                                 <span class="fs-4 text-light">Produts with set</span>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/set1.html"> <img src="images/set.jpg" class="img-item"
-                                                alt=""></a>
+                                        <a href="/each-products/set1.html"> <img src="image/product-with-set (2).jpg"
+                                                class="img-item" alt=""></a>
                                         <div>
                                             <h2 class="text-light">ipone</h2>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/set2.html"> <img src="images/iset.jpg" class="img-item"
-                                                alt=""></a>
+                                        <a href="/each-products/set2.html"> <img src="image/set-watch .jpg"
+                                                class="img-item" alt=""></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <a href="/each-products/set3.html"> <img src="images/pink iset.jpg"
                                                 class="img-item" alt=""></a>
                                     </div>
                                 </div>
-                                   <hr class="text-light line mt-5">
+                                <hr class="text-light line mt-5">
                                 <div class="row">
-                                <span class="fs-4 text-light left">Mobile Phone Products</span>
-                                <span class="right"><a href="Mobile.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <span class="fs-4 text-light left">Mobile Phone Products</span>
+                                    <span class="right"><a href="Mobile.html"><button class="btn shop-more">[Discover More]</button></a></span>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <a href="/each-products/redmi.html"><img src="image/redmi.jpg" class="img-item"
                                                 alt=""></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/oppo.html"> <img src="image/oppo.jpg"
-                                                class="img-item" alt=""></a>
+                                        <a href="/each-products/oppo.html"> <img src="image/oppo.jpg" class="img-item"
+                                                alt=""></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <a href="/each-products/oppox7.html"> <img src="image/oppo x7.jpg"
@@ -422,47 +447,50 @@
                                 <hr class="text-light line mt-5">
                                 <div class="row">
                                     <span class="fs-4 text-light left">Computer Devices</span>
-                                    <span class="right"><a href="Computers.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <span class="right"><a href="Computers.html"><button class="btn shop-more">[Discover
+                                                More]</button></a></span>
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/hp3.html"> <img src="image/laptop (7).jpeg"
+                                        <a href="/each-products/hp3.html"> <img src="image/laptop-avi (2).jpg"
                                                 class="img-item" alt=""></a>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/apple-coloured-laptop.html"> <img src="image/laptop (1).jpeg" class="img-item"
-                                                alt=""></a>
+                                        <a href="/each-products/apple-coloured-laptop.html"> <img
+                                                src="image/laptop-avi (1).jpg" class="img-item" alt=""></a>
                                     </div>
                                 </div>
                                 <hr class="text-light line mt-5">
                                 <div class="row">
-                                    <span class="fs-4 text-light left">Home Appliances</span>
-                                    <span class="right"><a href="Appliances.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <!-- <span class="fs-4 text-light left">Home Appliances</span>
+                                    <span class="right"><a href="Appliances.html"><button
+                                                class="btn shop-more">[Discover More]</button></a></span>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <a href="/each-products/blander.html"> <img
-                                            src="image/decker powechrush blender.jpg" class="img-item" alt=""></a>
+                                                src="image/decker powechrush blender.jpg" class="img-item" alt=""></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <a href="/each-products/lg-frige.html"><img src="image/lg frige 20.2-cu.jpg"
                                                 class="img-item" alt=""></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/eletric-kettle.html"> <img src="image/eletric kettle.jpg"
-                                                class="img-item" alt=""></a>
+                                        <a href="/each-products/eletric-kettle.html"> <img
+                                                src="image/eletric kettle.jpg" class="img-item" alt=""></a>
                                     </div>
                                 </div>
-                                <hr class="text-light line mt-5">
+                                <hr class="text-light line mt-5"> -->
                                 <div class="row">
                                     <span class="fs-4 text-light left">Other Accessories</span>
-                                    <span class="right"><a href="Accessories.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <span class="right"><a href="Accessories.html"><button
+                                                class="btn shop-more">[Discover More]</button></a></span>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
                                                 class="img-item" alt=""></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/earbud2.html"> <img src="image/jbl buds.jpg"
+                                        <a href="/each-products/earbud2.html"> <img src="image/accessories (1).jpg"
                                                 class="img-item" alt=""></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/charger2.html"><img src="image/charger (1).jpeg"
+                                        <a href="/each-products/charger2.html"><img src="image/accessories (3).jpg"
                                                 class="img-item" alt=""></a>
                                     </div>
                                 </div>
@@ -478,7 +506,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-5 col-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Amy Eletronics Accessories</h3>
-                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted destination
+                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
+                                destination
                                 for high quality eletronic accessories. We stand behind our produts with 6-months
                                 guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
                                 eletronic devices easily accessible to eyeryone</p>
@@ -524,7 +553,7 @@
         </footer>
     </div>
 
-    
+
     <script>
         let login = document.getElementById('login');
         let user = document.getElementById('user')
