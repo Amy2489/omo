@@ -26,7 +26,6 @@
         .menu-icon {
             color: orange;
         }
-
         .nav-logo {
             text-decoration: none;
             font-size: 25px;
@@ -60,14 +59,17 @@
             color: white;
         }
         .img-item {
-            height:600px;
+            height:550px;
+            object-fit: cover;
             width: 100%;
             border-radius: 5px;
             border: 5px solid orange;
             background-color: hsla(0, 0%, 100%, 0.59);
         }
-       
-         .product-content{
+        /* .redmi-container h4{
+            margin-left:120px;
+        } */
+         .redmi-content{
            height: 700px;
             margin-top: 50px;
          }
@@ -92,7 +94,6 @@
             font-size: 18px;
             font-weight: lighter;
         }
-
         .footer-list2 {
             margin-top: 40px;
         }
@@ -101,7 +102,7 @@
             color: lightgrey;
             line-height: 40px;
             width: 80%;
-            margin-left: 20px;
+           margin-left: 20px;
         }
 
         .footer-link {
@@ -128,7 +129,6 @@
             height: 80px;
             margin-top: 50px;
         }
-
         @media (max-width:780px) {
             .footer-list {
                 line-height: 30px;
@@ -136,7 +136,7 @@
             }
 
             .footer-paraghap-list {
-                line-height: 30px;
+                line-height:30px;
             }
 
             .footer-link {
@@ -151,25 +151,22 @@
         }
 
         @media (max-width:765px) {
-
-            .footer-link {
-                line-height: 27px;
-                font-size: 16px;
-            }
-
-            .footer-header {
-                font-size: 18px;
-                font-weight: bolder;
-                margin-top: 15px;
-            }
-
-            .footer-list2 {
-                margin-top: 10px;
-            }
-
-            .img-item {
-                height: 400px;
-            }
+            
+        .footer-link {
+            line-height:27px;
+            font-size:16px;
+        }
+        .footer-header{
+            font-size: 18px;
+            font-weight: bolder;
+            margin-top:15px; 
+        }
+        .footer-list2{
+            margin-top:10px;
+        }
+        .img-item {
+            height:400px;
+        }
         }
 
         @media (max-width:400px) {
@@ -196,10 +193,14 @@
             .footer-list2 {
                 margin-top: 12px;
             }
-
             .img-item {
-                height: 350px;
-            }
+            height:350px;
+        }
+        }
+
+        .copy-right-box {
+            height: 80px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -212,7 +213,7 @@
                     <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
                 </a>
     
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                <button class="navbar-toggler menu-icon" data-bs-toggle="collapse" data-bs-target="#main-nav"
                     aria-label=" toggler navigation" aria-controls="main-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -258,15 +259,15 @@
             </div>
         </nav>
         <main>
-            <div class="container-fliud">
+            <div class="container-fliud redmi-container">
                 <hr class="mx-5 text-light my-3">
-               <h4 class="mt-5 mb-5 text-light ms-5 ">potable Redmi smart phone</h4>
+               <h4 class="mt-5 mb-5 text-light ms-5 ">Oppo Reno 10 Pro+</h4>
                <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content">
-                        <img src="/image/samsung dryers.jpg" class="img-item" alt="">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 redmi-content">
+                        <img src="/image/PHONE- (4).jpg" class="img-item" alt="">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 redmi-content"></div>
                 </div>
                </div> 
             </div>
@@ -285,7 +286,7 @@
                         <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Menu</h3>
                             <ul>
-                                <li class="footer-list footer-list2"><a href="/shop.html" class="footer-link">Shop</a>
+                                <li class="footer-list footer-list2"><a href="shop.html" class="footer-link">Shop</a>
                                 </li>
                                 <li class="footer-list"><a href="/Mobile.html" class="footer-link">Mobile</a></li>
                                 <li class="footer-list"><a href="/Computers.html" class="footer-link">Computers</a></li>

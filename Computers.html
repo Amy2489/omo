@@ -98,9 +98,8 @@
         .img-item {
             height: 350px;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 10px;
-            border: 5px solid orange;
             background-color: hsla(0, 0%, 100%, 0.59);
         }
         .img-item:hover {
@@ -108,6 +107,22 @@
             transition-duration: 1s;
             cursor: pointer;
             border-radius: 1px;
+        } 
+        .img-container {
+            border: 3px solid orange;
+            padding: 30px;
+        }
+
+        .img-container h2 {
+            font-size: 17px;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        .img-container span {
+            font-weight: lighter;
+            font-size: 17px;
+            color: white;
         }
 
         footer {
@@ -340,20 +355,11 @@
                 <div class="container-fliud">
                     <div class="row mx-2 mx-md-1">
                         <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html" class=" main-link-header">Home</a>
-                                </li>
-                                <li class="breadcrumb-item text-light">Computers</li>
-                            </ul>
                             <ul>
-                                <li class="main-list mt-5"><a href="Computers.html"
-                                        class="main-links computer">Computers</a>
-                                </li>
-                                <li class="main-list"><a href="shop.html" class="main-links">Shop</a></li>
+                                <li class="main-list mt-5"><a href="shop.html" class="main-links">Shop</a></li>
                                 <li class="main-list"><a href="Mobile.html" class="main-links">Mobiles</a></li>
-                                <li class="main-list"><a href="Accessories.html" class="main-links">Accessories</a>
-                                </li>
-                                <li class="main-list"><a href="Appliances.html" class="main-links">Appliances</a></li>
+                                <li class="main-list"><a href="Computers.html"  class="main-links computer">Computers</a> </li>
+                                <li class="main-list"><a href="Accessories.html" class="main-links">Accessories</a></li>
                                 <li class="main-list"><a href="contact.html" class="main-links">Contact</a></li>
                             </ul>
                         </div>
@@ -362,37 +368,68 @@
                             <div class="container-fliud">
                                 <span class="fs-4 text-light">No produts <span class="fw-lighter">(8)</span></span>
                                 <div class="row">
+                                    
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/tablet1.html"> <img src="image/tablet-1.jpg"
+                                        <div class="img-container ">
+                                            <a href="/each-products/tablet1.html"> <img src="image/tablet-1.jpg"
                                                 class="img-item" alt=""></a>
+                                                 <h2 class="text-light"> Apple iPad Pro and Keyboard</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>  
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/desktop-monitor.html"> <img src="image/desktop monitor.webp"
-                                                class="img-item" alt=""></a>
+                                        <div class="img-container">
+                                            <a href="/each-products/desktop-monitor.html"> <img src="image/desktop monitor.webp"
+                                                class="img-item" alt=""></a> 
+                                                <h2 class="text-light">Desktop monitor</h2>
+                                                <span><strike>$00000</strike><span>-$0000</span></span>  
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                       <div class="img-container">
                                         <a href="/each-products/apple-coloured-laptop.html"><img src="image/laptop (1).jpeg"
-                                                class="img-item" alt=""></a>
+                                            class="img-item" alt=""></a>
+                                            <h2 class="text-light"> MacBook Pro</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                       </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/HP1.HTML"> <img src="image/laptop (4).jpeg"
+                                        <div class="img-container">
+                                            <a href="/each-products/HP1.HTML"> <img src="image/laptop-avi (4).jpg"
                                                 class="img-item" alt=""></a>
+                                                <h2 class="text-light">Apple M4 Pro</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/apple-tab.html"> <img src="image/apple-tablet.jpg"
-                                                class="img-item" alt=""></a>
+                                        <div class="img-container">
+                                            <a href="/each-products/apple-tab.html"> <img src="image/laptops- (5).jpg"  class="img-item" alt=""></a>
+                                            <h2 class="text-light">  Microsoft Surface Laptop 3</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>   
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/hp2.html"> <img src="image/laptop (6).jpeg"
-                                                class="img-item" alt=""></a>
+                                      <div class="img-container">
+                                        <a href="/each-products/hp2.html"> <img src="image/laptops- (6).jpg"
+                                            class="img-item" alt=""></a>
+                                            <h2 class="text-light">Apple MacBook Air 13 Intel Core i5</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>   
+                                      </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/hp3.html"> <img src="image/laptop (7).jpeg"
-                                                class="img-item" alt=""></a>
+                                       <div class="img-container">
+                                        <a href="/each-products/hp3.html"> <img src="image/laptops- (8).jpg"
+                                            class="img-item" alt=""></a>
+                                            <h2 class="text-light">SAMSUNG Galaxy Book3 Pro </h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>   
+                                       </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/dell-laptop.html"> <img src="image/laptop (8).jpeg"
-                                                class="img-item" alt=""></a>
+                                      <div class="img-container">
+                                        <a href="/each-products/dell-laptop.html"> <img src="image/laptops- (4).jpg" class="img-item" alt=""></a>
+                                        <h2 class="text-light">Samsung Notebook Plus2</h2>
+                                        <span><strike>$00000</strike><span>-$0000</span></span>   
+                                      </div>
                                     </div>
                                 </div>
                             </div>
