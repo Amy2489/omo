@@ -9,11 +9,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
     <title>Computers</title>
     <style>
         .background {
             background-color: black;
+        }
+
+        body {
+            font-family: "Monomakh", serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
         .nav-logo {
@@ -22,8 +33,9 @@
             color: hsla(0, 0%, 0%, 0.588);
             font-style: oblique;
         }
-        nav{
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811),hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
+
+        nav {
+            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
         }
 
         .nav-list {
@@ -44,26 +56,29 @@
             width: 60%;
             margin-left: 100px;
         }
-        .nav-icons{
-            color:white;
+
+        .nav-icons {
+            color: white;
         }
 
         .nav-icons:hover {
             color: orange;
         }
-        .link{
-            display:none;
+
+        .link {
+            display: none;
         }
-      
+
         .login-link {
-            font-size:15px;
+            font-size: 15px;
             color: white;
         }
-        .login-link:hover{
+
+        .login-link:hover {
             color: orange;
         }
 
-        .menu-icon{
+        .menu-icon {
             color: orange;
         }
 
@@ -95,6 +110,7 @@
         .main-link-header:hover {
             color: orange;
         }
+
         .img-item {
             height: 350px;
             width: 100%;
@@ -102,12 +118,14 @@
             border-radius: 10px;
             background-color: hsla(0, 0%, 100%, 0.59);
         }
+
         .img-item:hover {
             transform: scale(102%);
             transition-duration: 1s;
             cursor: pointer;
             border-radius: 1px;
-        } 
+        }
+
         .img-container {
             border: 3px solid orange;
             padding: 30px;
@@ -128,6 +146,7 @@
         footer {
             margin-top: 150px;
         }
+
         .footer-img {
             background-color: hsla(0, 0%, 50%, 0.169);
             height: auto;
@@ -148,6 +167,7 @@
             font-size: 18px;
             font-weight: lighter;
         }
+
         .footer-list2 {
             margin-top: 40px;
         }
@@ -156,7 +176,7 @@
             color: lightgrey;
             line-height: 40px;
             width: 80%;
-           margin-left: 20px;
+            margin-left: 20px;
         }
 
         .footer-link {
@@ -199,7 +219,7 @@
             }
 
             .footer-paraghap-list {
-                line-height:30px;
+                line-height: 30px;
             }
 
             .footer-link {
@@ -214,19 +234,21 @@
         }
 
         @media (max-width:765px) {
-            
-        .footer-link {
-            line-height:27px;
-            font-size:16px;
-        }
-        .footer-header{
-            font-size: 18px;
-            font-weight: bolder;
-            margin-top:15px; 
-        }
-        .footer-list2{
-            margin-top:10px;
-        }
+
+            .footer-link {
+                line-height: 27px;
+                font-size: 16px;
+            }
+
+            .footer-header {
+                font-size: 18px;
+                font-weight: bolder;
+                margin-top: 15px;
+            }
+
+            .footer-list2 {
+                margin-top: 10px;
+            }
         }
 
         @media (max-width:500px) {
@@ -341,7 +363,8 @@
                         <div class="link" id="login">
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="login.html" class="login-link">Login</a></li>
-                                <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign In</a>
+                                <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign
+                                        In</a>
                                 </li>
                             </ul>
                         </div>
@@ -358,7 +381,8 @@
                             <ul>
                                 <li class="main-list mt-5"><a href="shop.html" class="main-links">Shop</a></li>
                                 <li class="main-list"><a href="Mobile.html" class="main-links">Mobiles</a></li>
-                                <li class="main-list"><a href="Computers.html"  class="main-links computer">Computers</a> </li>
+                                <li class="main-list"><a href="Computers.html" class="main-links computer">Computers</a>
+                                </li>
                                 <li class="main-list"><a href="Accessories.html" class="main-links">Accessories</a></li>
                                 <li class="main-list"><a href="contact.html" class="main-links">Contact</a></li>
                             </ul>
@@ -368,68 +392,70 @@
                             <div class="container-fliud">
                                 <span class="fs-4 text-light">No produts <span class="fw-lighter">(8)</span></span>
                                 <div class="row">
-                                    
+
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container ">
                                             <a href="/each-products/tablet1.html"> <img src="image/tablet-1.jpg"
-                                                class="img-item" alt=""></a>
-                                                 <h2 class="text-light"> Apple iPad Pro and Keyboard</h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>  
+                                                    class="img-item" alt=""></a>
+                                            <h2 class="text-light"> Apple iPad Pro and Keyboard</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
-                                            <a href="/each-products/desktop-monitor.html"> <img src="image/desktop monitor.webp"
-                                                class="img-item" alt=""></a> 
-                                                <h2 class="text-light">Desktop monitor</h2>
-                                                <span><strike>$00000</strike><span>-$0000</span></span>  
+                                            <a href="/each-products/desktop-monitor.html"> <img
+                                                    src="image/desktop monitor.webp" class="img-item" alt=""></a>
+                                            <h2 class="text-light">Desktop monitor</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                       <div class="img-container">
-                                        <a href="/each-products/apple-coloured-laptop.html"><img src="image/laptop (1).jpeg"
-                                            class="img-item" alt=""></a>
+                                        <div class="img-container">
+                                            <a href="/each-products/apple-coloured-laptop.html"><img
+                                                    src="image/laptop (1).jpeg" class="img-item" alt=""></a>
                                             <h2 class="text-light"> MacBook Pro</h2>
                                             <span><strike>$00000</strike><span>-$0000</span></span>
-                                       </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/HP1.HTML"> <img src="image/laptop-avi (4).jpg"
-                                                class="img-item" alt=""></a>
-                                                <h2 class="text-light">Apple M4 Pro</h2>
+                                                    class="img-item" alt=""></a>
+                                            <h2 class="text-light">Apple M4 Pro</h2>
                                             <span><strike>$00000</strike><span>-$0000</span></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
-                                            <a href="/each-products/apple-tab.html"> <img src="image/laptops- (5).jpg"  class="img-item" alt=""></a>
-                                            <h2 class="text-light">  Microsoft Surface Laptop 3</h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>   
+                                            <a href="/each-products/apple-tab.html"> <img src="image/laptops- (5).jpg"
+                                                    class="img-item" alt=""></a>
+                                            <h2 class="text-light"> Microsoft Surface Laptop 3</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                      <div class="img-container">
-                                        <a href="/each-products/hp2.html"> <img src="image/laptops- (6).jpg"
-                                            class="img-item" alt=""></a>
+                                        <div class="img-container">
+                                            <a href="/each-products/hp2.html"> <img src="image/laptops- (6).jpg"
+                                                    class="img-item" alt=""></a>
                                             <h2 class="text-light">Apple MacBook Air 13 Intel Core i5</h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>   
-                                      </div>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                       <div class="img-container">
-                                        <a href="/each-products/hp3.html"> <img src="image/laptops- (8).jpg"
-                                            class="img-item" alt=""></a>
+                                        <div class="img-container">
+                                            <a href="/each-products/hp3.html"> <img src="image/laptops- (8).jpg"
+                                                    class="img-item" alt=""></a>
                                             <h2 class="text-light">SAMSUNG Galaxy Book3 Pro </h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>   
-                                       </div>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                      <div class="img-container">
-                                        <a href="/each-products/dell-laptop.html"> <img src="image/laptops- (4).jpg" class="img-item" alt=""></a>
-                                        <h2 class="text-light">Samsung Notebook Plus2</h2>
-                                        <span><strike>$00000</strike><span>-$0000</span></span>   
-                                      </div>
+                                        <div class="img-container">
+                                            <a href="/each-products/dell-laptop.html"> <img src="image/laptops- (4).jpg"
+                                                    class="img-item" alt=""></a>
+                                            <h2 class="text-light">Samsung Notebook Plus2</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -444,7 +470,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-5 col-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Amy Eletronics Accessories</h3>
-                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted destination
+                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
+                                destination
                                 for high quality eletronic accessories. We stand behind our produts with 6-months
                                 guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
                                 eletronic devices easily accessible to eyeryone</p>
@@ -489,7 +516,7 @@
             </div>
         </footer>
     </div>
-    
+
     <script>
         let login = document.getElementById('login');
         let user = document.getElementById('user')
@@ -498,4 +525,5 @@
         })
     </script>
 </body>
+
 </html>

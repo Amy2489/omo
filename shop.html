@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
     <title>Shop with Us</title>
     <style>
-         body {
-            font-family: system-ui, -apple-system, sans-serif;
+        body {
+            font-family: "Monomakh", serif;
+            font-weight: 400;
             line-height: 1.6;
         }
 
@@ -109,6 +115,21 @@
             width: 100%;
         }
 
+        .set-img-item {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: hsla(0, 0%, 100%, 0.59);
+        }
+
+        .set-img-item:hover {
+            transform: scale(102%);
+            transition-duration: 1s;
+            cursor: pointer;
+            border-radius: 1px;
+        }
+
         .img-item {
             height: 350px;
             width: 100%;
@@ -137,17 +158,35 @@
             border-radius: 1px;
         }
 
+        .img-container {
+            border: 3px solid orange;
+            padding: 30px;
+        }
+
+        .img-container h2 {
+            font-size: 17px;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        .img-container span {
+            font-weight: lighter;
+            font-size: 17px;
+            color: white;
+        }
+
         .shop-more {
             text-decoration: none;
-            color:orange;
+            color: orange;
         }
 
         .shop-more:hover {
             font-size: 18px;
             color: orange;
         }
-        .computer{
-            height:400px;
+
+        .computer {
+            height: 400px;
         }
 
         .line {
@@ -414,25 +453,36 @@
                                 <span class="fs-4 text-light">Produts with set</span>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/set1.html"> <img src="image/product-with-set (2).jpg"
-                                                class="img-item" alt=""></a>
-                                        <div>
-                                            <h2 class="text-light">ipone</h2>
+                                        <div class="img-container">
+                                            <a href="/each-products/set1.html"> <img
+                                                    src="image/product-with-set (2).jpg" class="set-img-item"
+                                                    alt=""></a>
+                                            <h2 class="text-light">Oppo Find N3 Flip</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/set2.html"> <img src="image/set-watch .jpg"
-                                                class="img-item" alt=""></a>
+                                        <div class="img-container">
+                                            <a href="/each-products/set2.html"> <img src="image/set-watch .jpg"
+                                                    class="set-img-item" alt=""></a>
+                                            <h2 class="text-light">Oppo Find N3 Flip</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/set3.html"> <img src="images/pink iset.jpg"
-                                                class="img-item" alt=""></a>
+                                        <div class="img-container">
+                                            <a href="/each-products/set3.html"> <img src="images/pink iset.jpg"
+                                                    class="set-img-item" alt=""></a>
+                                            <h2 class="text-light">Oppo Find N3 Flip</h2>
+                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <hr class="text-light line mt-5">
                                 <div class="row">
                                     <span class="fs-4 text-light left">Mobile Phone Products</span>
-                                    <span class="right"><a href="Mobile.html"><button class="btn shop-more">[Discover More]</button></a></span>
+                                    <span class="right"><a href="Mobile.html"><button class="btn shop-more">[Discover
+                                                More]</button></a></span>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <a href="/each-products/redmi.html"><img src="image/redmi.jpg" class="img-item"
                                                 alt=""></a>
@@ -462,43 +512,26 @@
                                 </div>
                                 <hr class="text-light line mt-5">
                                 <div class="row">
-                                    <!-- <span class="fs-4 text-light left">Home Appliances</span>
-                                    <span class="right"><a href="Appliances.html"><button
-                                                class="btn shop-more">[Discover More]</button></a></span>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/blander.html"> <img
-                                                src="image/decker powechrush blender.jpg" class="img-item" alt=""></a>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/lg-frige.html"><img src="image/lg frige 20.2-cu.jpg"
-                                                class="img-item" alt=""></a>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/eletric-kettle.html"> <img
-                                                src="image/eletric kettle.jpg" class="img-item" alt=""></a>
-                                    </div>
-                                </div>
-                                <hr class="text-light line mt-5"> -->
-                                <div class="row">
-                                    <span class="fs-4 text-light left">Other Accessories</span>
-                                    <span class="right"><a href="Accessories.html"><button
-                                                class="btn shop-more">[Discover More]</button></a></span>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
-                                                class="img-item" alt=""></a>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/earbud2.html"> <img src="image/accessories (1).jpg"
-                                                class="img-item" alt=""></a>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/charger2.html"><img src="image/accessories (3).jpg"
-                                                class="img-item" alt=""></a>
+                                    <div class="row">
+                                        <span class="fs-4 text-light left">Other Accessories</span>
+                                        <span class="right"><a href="Accessories.html"><button
+                                                    class="btn shop-more">[Discover More]</button></a></span>
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                            <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
+                                                    class="img-item" alt=""></a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                            <a href="/each-products/earbud2.html"> <img src="image/accessories (1).jpg"
+                                                    class="img-item" alt=""></a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                            <a href="/each-products/charger2.html"><img src="image/accessories (3).jpg"
+                                                    class="img-item" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
             </section>
         </main>
         <footer>
