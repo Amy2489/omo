@@ -28,7 +28,8 @@
         }
 
         .background {
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
+            /* background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791)); */
+            background: black;
         }
 
         nav {
@@ -70,6 +71,9 @@
 
         .nav-icons:hover {
             color: white;
+        }
+        .img-content{
+            padding:0px 70px;
         }
 
         .img-item {
@@ -147,7 +151,10 @@
             height: 80px;
             margin-top: 50px;
         }
-
+        @media (max-width:950px) {
+            .img-content{
+            padding:0px 5px;
+        } }
         @media (max-width:780px) {
             .footer-list {
                 line-height: 30px;
@@ -162,7 +169,9 @@
                 line-height: 30px;
                 font-size: 16px;
             }
-
+            .img-content{
+            padding:0px 50px;
+        }
             .footer-header {
                 font-size: 20px;
                 margin-top: 20px;
@@ -219,20 +228,26 @@
             .img-item {
                 height: 350px;
             }
+            .img-content{
+            padding:0px 20px;
         }
-
+        }
         .label {
             display: flex;
             justify-content: center;
             margin: 25px 0px;
         }
-
-        .cart {
-            margin-top: 20px;
+        .content p{
+          font-size:18px;
+          color:rgb(190, 187, 187);
         }
-
-        .content {
-            margin-top: 70px;
+        .content span{
+            font-size: 20px;
+            color: rgb(190, 187, 187);
+        }
+        .cart-button a{
+            color: black;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -296,36 +311,38 @@
                 <h4 class="text-light label">OPPO Find X7 Ultra</h4>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 redmi-content">
-                            <img src="/image/oppo amy special.jpg" class="img-item" alt="">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 redmi-content img-content">
+                            <img src="/image/oppo amy special.jpg" class="img-item" alt="OPPO Find X7 Ultra">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12 content redmi-content">
-                            <h5>
+                            <p>
                                 <!-- DESCRIPTIONS -->
-                                Brand: OPPO,
-                                Operating System: ColorOS (based on Android),
-                                RAM Memory Installed Size:,
-                                - 12GB/16GB LPDDR5X RAM,
-                                - Extended RAM capability,
-                                CPU Model: Qualcomm Snapdragon 8 Gen 3,
-                                CPU Speed: Up to 3.3 GHz,
+                                Brand: OPPO <br>
+                                Operating System: ColorOS (based on Android) <br>
+                                RAM Memory Installed Size: <br>
+                                - 12GB/16GB LPDDR5X RAM <br>
+                                - Extended RAM capability <br>
+                                CPU Model: Qualcomm Snapdragon 8 Gen 3 <br>
+                                CPU Speed: Up to 3.3 GHz <br>
                                 Memory Storage Capacity:
-                                - 256GB/512GB UFS 4.0 storage,
-                                Screen Size: 6.82 inches,
-                                Resolution: QHD+ (3168 x 1440 pixels),
-                                Refresh Rate: 120Hz LTPO,
+                                - 256GB/512GB UFS 4.0 storage <br>
+                                Screen Size: 6.82 inches <br>
+                                Resolution: QHD+ (3168 x 1440 pixels) <br>
+                                Refresh Rate: 120Hz LTPO <br>
                                 Model Name: Find X7 Ultra.
-                            </h5>
+                            </p>
                             <!-- PRICE -->
-                            <span>-30% <span>$00000</span></span>
+                            <span>(-13%) <span class="price">$00000</span></span>
+                            <p style="font-size:16px;">shipping fee $10</p>
 
                             <!-- CART BUTTONS -->
-                            <div class="cart">
+                            <div>
                                 <p id="demo">No Cart</p>
-                                <button id="button" class="btn btn-light">Quantity</button>
-                                <button id="button1" class="btn btn-light">+1</button>
-                                <button id="button2" class="btn btn-light">+2</button>
-                                <button id="button3" class="btn btn-light">Reset Cart</button>
+                                <button class="btn btn-light mb-1 btn-sm cart-button"><a href="/login.html">Cart</a></button><br>
+                                <button id="button" class="btn btn-sm btn-light">Quantity</button>
+                                <button id="button1" class="btn btn-sm btn-light">Add</button>
+                                <button id="button2" class="btn btn-sm btn-light">+1</button>
+                                <button id="button3" class="btn btn-sm btn-light">Reset Cart</button>
                             </div>
                         </div>
                     </div>
@@ -365,7 +382,7 @@
                                     Niger</li>
                                 <li class="footer-list">State: Niger State</li>
                                 <li class="footer-list">Email: amyogechi@gmail.com</li>
-                                <li class="footer-list">Phone: 234-812-099-1981</li>
+                                <li class="footer-list">Phone: +234-812-099-1981</li>
 
                             </ul>
                         </div>
@@ -400,7 +417,7 @@
         })
 
         button1.addEventListener('click', function () {
-            cartQuantity = cartQuantity + 1;
+            cartQuantity = cartQuantity + 1 ;
             document.getElementById('demo').innerHTML = cartQuantity;
         })
         button2.addEventListener('click', function () {

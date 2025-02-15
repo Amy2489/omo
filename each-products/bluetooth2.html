@@ -17,7 +17,7 @@
         }
 
         .background {
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
+            background: black;
         }
 
         nav {
@@ -67,11 +67,31 @@
             border: 5px solid orange;
             background-color: hsla(0, 0%, 100%, 0.59);
         }
-       
-         .product-content{
-           height: 700px;
-            margin-top: 50px;
+          .product-content{
+           height: 600px;
+            margin-top: 20px;
          }
+         .redmi-container h4 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .label {
+            display: flex;
+            justify-content: center;
+            margin: 25px 0px;
+        }
+        .content p{
+          font-size:18px;
+          color:rgb(190, 187, 187);
+        }
+        .content span{
+            font-size: 20px;
+            color: rgb(190, 187, 187);
+        }
+        .cart-button a{
+            color: black;
+            text-decoration: none;
+        }
          .footer-img {
             background-color: hsla(0, 0%, 50%, 0.169);
             height: auto;
@@ -128,7 +148,12 @@
             height: 80px;
             margin-top: 50px;
         }
+        @media (max-width:950px) {
+            .img-content{
+            padding:0px 5px;
+        }
 
+        }
         @media (max-width:780px) {
             .footer-list {
                 line-height: 30px;
@@ -166,9 +191,15 @@
             .footer-list2 {
                 margin-top: 10px;
             }
-
+            .img-content{
+            padding:0px;
+        }
+        .img-content{
+            padding:0px 50px;
+        }
             .img-item {
                 height: 400px;
+                width: 100%;
             }
         }
 
@@ -200,6 +231,9 @@
             .img-item {
                 height: 350px;
             }
+            .img-content{
+            padding:0px 20px;
+        }
         }
     </style>
 </head>
@@ -247,8 +281,6 @@
     
                         </ul>
                     </div>
-                    <!-- <a href="" class="but-group"><button
-                            class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
                     <div class="mt-2 mx-lg-5 ">
                         <i class="fa-solid fa-user nav-icons p-2"></i>
                         <i class="fa-solid fa-heart nav-icons p-2"></i>
@@ -258,15 +290,29 @@
             </div>
         </nav>
         <main>
-            <div class="container-fliud">
+            <div class="container-fliud redmi-container">
                 <hr class="mx-5 text-light my-3">
-               <h4 class="mt-5 mb-5 text-light ms-5 ">potable Redmi smart phone</h4>
+               <h4 class="mt-5 mb-5 text-light ms-5 label">portable bluetooth speaker</h4>
                <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content">
-                        <img src="/images/bluetooth.jpg" class="img-item" alt="">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content img-content">
+                        <img src="/images/bluetooth.jpg" class="img-item" alt="portable bluetooth speaker">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 content product-content">
+
+                    <!-- PRICE -->
+                    <span>(-13%) <span class="price">$00000</span></span>
+                    <p style="font-size:16px;">shipping fee $10</p>
+                        <!-- CART BUTTONS -->
+                        <div>
+                            <p id="demo">No Cart</p>
+                            <button class="btn btn-light mb-1 btn-sm cart-button"><a href="/login.html">Cart</a></button><br>
+                            <button id="button" class="btn btn-sm btn-light">Quantity</button>
+                            <button id="button1" class="btn btn-sm btn-light">Add</button>
+                            <button id="button2" class="btn btn-sm btn-light">+1</button>
+                            <button id="button3" class="btn btn-sm btn-light">Reset Cart</button>
+                        </div>
+                    </div>
                 </div>
                </div> 
             </div>
