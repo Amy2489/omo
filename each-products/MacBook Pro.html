@@ -10,17 +10,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0PX;
             padding: 0PX;
         }
 
-        .background {
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811),hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
+        body {
+            font-family: "Monomakh", serif;
+            font-weight: 400;
+            font-style: normal;
         }
-        nav{
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811),hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
+
+        .background {
+            background: black;
+        }
+
+        nav {
+            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
+        }
+
+        .menu-icon {
+            color: orange;
         }
 
         .nav-logo {
@@ -31,9 +47,6 @@
 
         .nav-list {
             width: 100%;
-        }
-         .menu-icon{
-            color: orange;
         }
 
         .a-link {
@@ -49,6 +62,18 @@
             text-decoration: underline;
         }
 
+        .link {
+            display: none;
+        }
+
+        .login-link {
+            font-size: 15px;
+            color: white;
+        }
+
+        .login-link:hover {
+            color: orange;
+        }
 
         .ul-list {
             width: 60%;
@@ -58,20 +83,52 @@
         .nav-icons:hover {
             color: white;
         }
+
+        .img-content {
+            padding: 0px 70px;
+        }
+
         .img-item {
-            height:500px;
+            height: 500px;
             width: 100%;
+            object-fit: contain;
             border-radius: 5px;
             border: 5px solid orange;
             background-color: hsla(0, 0%, 100%, 0.59);
         }
-       
-         .product-content{
-           height: 700px;
-            margin-top: 50px;
-         }
 
-         .footer-img {
+        .redmi-container h4 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product-content {
+            height: 600px;
+            margin-top: 20px;
+        }
+
+        .label {
+            display: flex;
+            justify-content: center;
+            margin: 25px 0px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: rgb(190, 187, 187);
+        }
+
+        .content span {
+            font-size: 20px;
+            color: rgb(190, 187, 187);
+        }
+
+        .cart-button a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .footer-img {
             background-color: hsla(0, 0%, 50%, 0.169);
             height: auto;
             color: lightgrey;
@@ -91,6 +148,7 @@
             font-size: 18px;
             font-weight: lighter;
         }
+
         .footer-list2 {
             margin-top: 40px;
         }
@@ -99,7 +157,7 @@
             color: lightgrey;
             line-height: 40px;
             width: 80%;
-           margin-left: 20px;
+            margin-left: 20px;
         }
 
         .footer-link {
@@ -126,6 +184,13 @@
             height: 80px;
             margin-top: 50px;
         }
+
+        @media (max-width:950px) {
+            .img-content {
+                padding: 0px 5px;
+            }
+        }
+
         @media (max-width:780px) {
             .footer-list {
                 line-height: 30px;
@@ -133,12 +198,16 @@
             }
 
             .footer-paraghap-list {
-                line-height:30px;
+                line-height: 30px;
             }
 
             .footer-link {
                 line-height: 30px;
                 font-size: 16px;
+            }
+
+            .img-content {
+                padding: 0px 50px;
             }
 
             .footer-header {
@@ -148,22 +217,42 @@
         }
 
         @media (max-width:765px) {
-            
-        .footer-link {
-            line-height:27px;
-            font-size:16px;
+
+            .footer-link {
+                line-height: 27px;
+                font-size: 16px;
+            }
+
+            .footer-header {
+                font-size: 18px;
+                font-weight: bolder;
+                margin-top: 15px;
+            }
+
+            .footer-list2 {
+                margin-top: 10px;
+            }
+
+            .product-content {
+                height: 400px;
+                margin-top: 20px;
+            }
+
+            .img-item {
+                height: 400px;
+            }
         }
-        .footer-header{
-            font-size: 18px;
-            font-weight: bolder;
-            margin-top:15px; 
+
+        @media (max-width:762px) {
+            .product-content2 {
+                height: 550px;
+            }
         }
-        .footer-list2{
-            margin-top:10px;
-        }
-        .img-item {
-            height:400px;
-        }
+
+        @media (max-width:444px) {
+            .product-content2 {
+                height: 600px;
+            }
         }
 
         @media (max-width:400px) {
@@ -190,9 +279,64 @@
             .footer-list2 {
                 margin-top: 12px;
             }
+
             .img-item {
-            height:350px;
+                height: 350px;
+            }
+
+            .img-content {
+                padding: 0px 20px;
+            }
+
+            .product-content {
+                height: 350px;
+                margin-top: 8px;
+            }
+
+            .product-content2 {
+                height: 500px;
+            }
+
+            .label {
+                margin: 5px 0px;
+                font-size: 15px;
+                display: flex;
+                justify-content: start;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+            .content span {
+                font-size: 14px;
+            }
         }
+
+        @media (max-width:342px) {
+            .product-content {
+                height: 350px;
+                margin-top: 8px;
+            }
+
+            .product-content2 {
+                height: 530px;
+            }
+
+            .label {
+                margin: 5px 0px;
+                font-size: 15px;
+                display: flex;
+                justify-content: start;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+            .content span {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -201,10 +345,10 @@
     <div class="background">
         <nav class="navbar navbar-expand-md">
             <div class="container-xxl">
-                <a href="/home.html" id="top" class="nav-brand nav-logo">
+                <a href="/index.html" id="top" class="nav-brand nav-logo">
                     <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
                 </a>
-    
+
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav"
                     aria-label=" toggler navigation" aria-controls="main-nav">
                     <span class="navbar-toggler-icon"></span>
@@ -229,39 +373,72 @@
                             </li>
                             <li>
                                 <hr class="divider">
-                            <li class="nav-list"><a href="/Appliances.html" class="nav-link a-link ">Appliances</a></li>
-                            <li>
-                                <hr class="divider">
                             </li>
                             <li class="nav-list"><a href="/contact.html" class="nav-link a-link ">Contact</a></li>
                             <li>
                                 <hr class="divider">
                             </li>
-    
+
                         </ul>
                     </div>
-                    <!-- <a href="" class="but-group"><button
-                            class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
                     <div class="mt-2 mx-lg-5 ">
-                        <i class="fa-solid fa-user nav-icons p-2"></i>
                         <i class="fa-solid fa-heart nav-icons p-2"></i>
                         <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
+                        <i class="fa-solid fa-user nav-icons p-2" id="user"> </i>
+                        <div class="link" id="login">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="login.html" class="login-link">Login</a></li>
+                                <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign In</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
         <main>
-            <div class="container-fliud">
+            <div class="container-fliud redmi-container">
                 <hr class="mx-5 text-light my-3">
-               <h4 class="mt-5 mb-5 text-light ms-5 ">potable Redmi smart phone</h4>
-               <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content">
-                        <img src="/image/laptop (1).jpeg" class="img-item" alt="">
+                <h4 class="mt-5 mb-5 text-light ms-5 label">MacBook Pro</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content img-content">
+                            <img src="/image/laptop (1).jpeg" class="img-item" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 content product-content product-content2">
+                            <p>
+                                <!-- DESCRIPTIONS -->
+                                Brand: OPPO <br>
+                                Operating System: ColorOS (based on Android) <br>
+                                RAM Memory Installed Size: <br>
+                                - 12GB/16GB LPDDR5X RAM <br>
+                                - Extended RAM capability <br>
+                                CPU Model: Qualcomm Snapdragon 8 Gen 3 <br>
+                                CPU Speed: Up to 3.3 GHz <br>
+                                Memory Storage Capacity:
+                                - 256GB/512GB UFS 4.0 storage <br>
+                                Screen Size: 6.82 inches <br>
+                                Resolution: QHD+ (3168 x 1440 pixels) <br>
+                                Refresh Rate: 120Hz LTPO <br>
+                                Model Name: Find X7 Ultra.
+                            </p>
+                            <!-- PRICE -->
+                            <span>(-13%) <span class="price">$00000</span></span>
+                            <p style="font-size:16px;">shipping fee $10</p>
+
+                            <!-- CART BUTTONS -->
+                            <div>
+                                <p id="demo">No Cart</p>
+                                <button class="btn btn-light mb-1 btn-sm cart-button"><a
+                                        href="/sign-up.html">Cart</a></button><br>
+                                <button id="button" class="btn btn-sm btn-light">Quantity</button>
+                                <button id="button1" class="btn btn-sm btn-light">Add</button>
+                                <button id="button2" class="btn btn-sm btn-light">+1</button>
+                                <button id="button3" class="btn btn-sm btn-light">Reset Cart</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content"></div>
                 </div>
-               </div> 
             </div>
         </main>
         <footer>
@@ -269,11 +446,9 @@
                 <div class="container-fliud mx-4">
                     <div class="row">
                         <div class="col-12 col-lg-5 col-md-5 footer-container">
-                            <h3 class=" text-capitalize  footer-header">Amy Eletronics Accessories</h3>
-                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted destination
-                                for high quality eletronic accessories. We stand behind our produts with 6-months
-                                guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
-                                eletronic devices easily accessible to eyeryone</p>
+                            <h3 class=" text-capitalize  footer-header">Amy Electronics Accessories</h3>
+                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
+                                destination for high quality electronic accessories. We stand behind our products with 6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest electronic devices easily accessible to everyone</p>
                         </div>
                         <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Menu</h3>
@@ -292,12 +467,12 @@
                         <div class="col-12 col-lg-5 col-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">INFO</h3>
                             <ul>
-                                <li class="footer-list footer-list2">Adderss: Kwankwashe Street, opposite IBB market
+                                <li class="footer-list footer-list2">Address: Kwankwashe Street, opposite IBB market
                                     Niger</li>
                                 <li class="footer-list">State: Niger State</li>
                                 <li class="footer-list">Email: amyogechi@gmail.com</li>
                                 <li class="footer-list">Phone: 234-812-099-1981</li>
-    
+
                             </ul>
                         </div>
                     </div>
@@ -315,6 +490,7 @@
             </div>
         </footer>
     </div>
+    <script src="/index.js"></script>
 </body>
 
 </html>
