@@ -10,11 +10,15 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <title>Shop with Us</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
+            font-family: "Monomakh", serif;
+            font-weight: 400;
+            font-style: normal;
             background-color: black;
         }
 
@@ -109,7 +113,7 @@
         .img-item {
             height: 350px;
             width: 100%;
-            object-fit:contain;
+            object-fit: contain;
             border-radius: 10px;
             border: 5px solid orange;
             background-color: white;
@@ -334,7 +338,7 @@
             height: 550px;
             width: 100%;
             object-fit: contain;
-           
+
         }
 
         .slide-container {
@@ -502,18 +506,20 @@
                                 <span class="right"><a href="Accessories.html"><button class="btn shop-more">[Discover
                                             More]</button></a></span>
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/Apple AirPods.html"> <img src="images/pod3,1.webp"
+                                            class="img-item" alt="Apple AirPods"></a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/Amazon Echo Dot.html"> <img src="image/jambx.jpg"
+                                            class="img-item" alt="Amazon Echo Dot"></a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                     <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
-                                            class="img-item" alt=""></a>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                    <a href="/each-products/earbud2.html"> <img src="image/accessories (1).jpg"
-                                            class="img-item" alt=""></a>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                    <a href="/each-products/charger2.html"><img src="image/accessories (3).jpg"
-                                            class="img-item" alt=""></a>
+                                            class="img-item" alt="Wireless Mouse"></a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
@@ -529,7 +535,9 @@
                     <div class="col-12 col-lg-5 col-md-5 footer-container">
                         <h3 class=" text-capitalize  footer-header">Amy Electronics Accessories</h3>
                         <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
-                            destination for high quality electronic accessories. We stand behind our products with 6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest electronic devices easily accessible to everyone</p>
+                            destination for high quality electronic accessories. We stand behind our products with
+                            6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest
+                            electronic devices easily accessible to everyone</p>
                     </div>
                     <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
                         <h3 class=" text-capitalize  footer-header">Menu</h3>
@@ -571,7 +579,15 @@
     </div>
 
 
-    <script src="index.js"></script>
+
+      <!-- Javascript Code -->
+    <script>
+        let login = document.getElementById('login');
+        let user = document.getElementById('user')
+        user.addEventListener('click', () => {
+            login.classList.toggle('link')
+        })
+    </script>
 </body>
 
 </html>

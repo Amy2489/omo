@@ -504,7 +504,15 @@
         </footer>
     </div>
 
-    <script src="/index.js"></script>
+
+      <!-- Javascript Code -->
+    <script>
+        let login = document.getElementById('login');
+        let user = document.getElementById('user')
+        user.addEventListener('click', () => {
+            login.classList.toggle('link')
+        })
+    </script>
 </body>
 
 </html>
