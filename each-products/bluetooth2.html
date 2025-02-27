@@ -10,239 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <style>
-        * {
-            margin: 0PX;
-            padding: 0PX;
-        }
-
-        .background {
-            background: black;
-        }
-
-        nav {
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
-        }
-
-        .menu-icon {
-            color: orange;
-        }
-
-        .nav-logo {
-            text-decoration: none;
-            font-size: 25px;
-            font-style: oblique;
-        }
-
-        .nav-list {
-            width: 100%;
-        }
-
-        .a-link {
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .a-link:hover {
-            color: orange;
-            font-size: 18px;
-            text-decoration: underline;
-        }
-
-
-        .ul-list {
-            width: 60%;
-            margin-left: 100px;
-        }
-
-        .nav-icons:hover {
-            color: white;
-        }
-        .img-item {
-            height:480px;
-            width: 100%;
-            border-radius: 5px;
-            border: 5px solid orange;
-            background-color: hsla(0, 0%, 100%, 0.59);
-        }
-          .product-content{
-           height: 600px;
-            margin-top: 20px;
-         }
-         .redmi-container h4 {
-            display: flex;
-            justify-content: space-around;
-        }
-        .label {
-            display: flex;
-            justify-content: center;
-            margin: 25px 0px;
-        }
-        .content p{
-          font-size:18px;
-          color:rgb(190, 187, 187);
-        }
-        .content span{
-            font-size: 20px;
-            color: rgb(190, 187, 187);
-        }
-        .cart-button a{
-            color: black;
-            text-decoration: none;
-        }
-         .footer-img {
-            background-color: hsla(0, 0%, 50%, 0.169);
-            height: auto;
-            color: lightgrey;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .footer-header {
-            margin: 50px 30px 0px 30px
-        }
-
-        .footer-list {
-            list-style-type: none;
-            color: lightgrey;
-            line-height: 40px;
-            font-size: 18px;
-            font-weight: lighter;
-        }
-
-        .footer-list2 {
-            margin-top: 40px;
-        }
-
-        .footer-paraghap-list {
-            color: lightgrey;
-            line-height: 40px;
-            width: 80%;
-            margin-left: 20px;
-        }
-
-        .footer-link {
-            color: lightgrey;
-            line-height: 40px;
-            font-size: 18px;
-            font-weight: lighter;
-            text-decoration: none;
-        }
-
-
-        .footer-link:hover {
-            color: orange;
-        }
-
-        .copy-right {
-            display: flex;
-            justify-content: end;
-            font-weight: bold;
-
-        }
-
-        .copy-right-box {
-            height: 80px;
-            margin-top: 50px;
-        }
-        @media (max-width:950px) {
-            .img-content{
-            padding:0px 5px;
-        }
-
-        }
-        @media (max-width:780px) {
-            .footer-list {
-                line-height: 30px;
-                font-size: 16px;
-            }
-
-            .footer-paraghap-list {
-                line-height: 30px;
-            }
-
-            .footer-link {
-                line-height: 30px;
-                font-size: 16px;
-            }
-
-            .footer-header {
-                font-size: 20px;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width:765px) {
-
-            .footer-link {
-                line-height: 27px;
-                font-size: 16px;
-            }
-
-            .footer-header {
-                font-size: 18px;
-                font-weight: bolder;
-                margin-top: 15px;
-            }
-
-            .footer-list2 {
-                margin-top: 10px;
-            }
-            .img-content{
-            padding:0px;
-        }
-        .img-content{
-            padding:0px 50px;
-        }
-            .img-item {
-                height: 400px;
-                width: 100%;
-            }
-        }
-
-        @media (max-width:400px) {
-            .footer-list {
-                line-height: 25px;
-                font-size: 14px;
-            }
-
-            .footer-paraghap-list {
-                line-height: 25px;
-            }
-
-            .footer-link {
-                line-height: 25px;
-                font-size: 14px;
-            }
-
-            .footer-header {
-                font-size: 18px;
-                font-weight: bolder;
-                margin-top: 15px;
-            }
-
-            .footer-list2 {
-                margin-top: 12px;
-            }
-
-            .img-item {
-                height: 350px;
-            }
-            .img-content{
-            padding:0px 20px;
-        }
-        }
-    </style>
+   <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
     <div class="background">
         <nav class="navbar navbar-expand-md">
             <div class="container-xxl">
-                <a href="/home.html" id="top" class="nav-brand nav-logo">
+                <a href="/index.html" id="top" class="nav-brand nav-logo">
                     <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
                 </a>
     
@@ -270,9 +45,6 @@
                             </li>
                             <li>
                                 <hr class="divider">
-                            <li class="nav-list"><a href="/Appliances.html" class="nav-link a-link ">Appliances</a></li>
-                            <li>
-                                <hr class="divider">
                             </li>
                             <li class="nav-list"><a href="/contact.html" class="nav-link a-link ">Contact</a></li>
                             <li>
@@ -292,82 +64,88 @@
         <main>
             <div class="container-fliud redmi-container">
                 <hr class="mx-5 text-light my-3">
-               <h4 class="mt-5 mb-5 text-light ms-5 label">portable bluetooth speaker</h4>
+               <h4 class="mt-5 mb-5 text-light ms-5 label">Turn5 Portable Bluetooth Speaker with Handle</h4>
                <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-content img-content">
                         <img src="/images/bluetooth.jpg" class="img-item" alt="portable bluetooth speaker">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 content product-content">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 content redmi-content">
+                        <p>
+                            Brand: Turn5 <br>
+                            Model Name: Portable Bluetooth Speaker with Handle <br>
+                            Connectivity: Bluetooth (version 5.0) <br>
+                            Battery: Rechargeable lithium-ion battery <br>
+                            Battery Life: Typically 8-20 hours (depending on volume) <br>
+                            Charging Port: Micro-USB <br>
+                            Additional Inputs: May include AUX port, TF/microSD card slot <br>
+                            Water Resistance: May have IPX rating for water/dust resistance <br>
+                        <!-- PRICE -->
+                        <span class="price">₦72,000</span>
+                        <p style="font-size:16px;">shipping fee $10</p>
 
-                    <!-- PRICE -->
-                    <span>(-13%) <span class="price">$00000</span></span>
-                    <p style="font-size:16px;">shipping fee $10</p>
                         <!-- CART BUTTONS -->
                         <div>
                             <p id="demo">No Cart</p>
-                            <button class="btn btn-light mb-1 btn-sm cart-button"><a href="/login.html">Cart</a></button><br>
+                            <button class="btn btn-light mb-1 btn-sm cart-button"><a href="/sign-up.html">Cart</a></button><br>
                             <button id="button" class="btn btn-sm btn-light">Quantity</button>
                             <button id="button1" class="btn btn-sm btn-light">Add</button>
-                            <button id="button2" class="btn btn-sm btn-light">+1</button>
                             <button id="button3" class="btn btn-sm btn-light">Reset Cart</button>
                         </div>
                     </div>
                 </div>
-               </div> 
             </div>
-        </main>
-        <footer>
-            <div class="container-fliud footer-img">
-                <div class="container-fliud mx-4">
-                    <div class="row">
-                        <div class="col-12 col-lg-5 col-md-5 footer-container">
-                            <h3 class=" text-capitalize  footer-header">Amy Eletronics Accessories</h3>
-                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted destination
-                                for high quality eletronic accessories. We stand behind our produts with 6-months
-                                guarantee, ensuring you can shop with confindence. Our mission is is to make the latest
-                                eletronic devices easily accessible to eyeryone</p>
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
-                            <h3 class=" text-capitalize  footer-header">Menu</h3>
-                            <ul>
-                                <li class="footer-list footer-list2"><a href="/shop.html" class="footer-link">Shop</a>
-                                </li>
-                                <li class="footer-list"><a href="/Mobile.html" class="footer-link">Mobile</a></li>
-                                <li class="footer-list"><a href="/Computers.html" class="footer-link">Computers</a></li>
-                                <li class="footer-list"><a href="/Accessories.html" class="footer-link">Accessories</a>
-                                </li>
-                                <li class="footer-list"><a href="/Appliances.html" class="footer-link">Appliances</a>
-                                </li>
-                                <li class="footer-list"><a href="/contact.html" class="footer-link">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-5 col-md-5 footer-container">
-                            <h3 class=" text-capitalize  footer-header">INFO</h3>
-                            <ul>
-                                <li class="footer-list footer-list2">Adderss: Kwankwashe Street, opposite IBB market
-                                    Niger</li>
-                                <li class="footer-list">State: Niger State</li>
-                                <li class="footer-list">Email: amyogechi@gmail.com</li>
-                                <li class="footer-list">Phone: 234-812-099-1981</li>
-    
-                            </ul>
-                        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fliud footer-img">
+            <div class="container-fliud mx-4">
+                <div class="row">
+                    <div class="col-12 col-lg-5 col-md-5 footer-container">
+                        <h3 class=" text-capitalize  footer-header">Amy Electronics Accessories</h3>
+                        <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
+                            destination for high quality electronic accessories. We stand behind our products with 6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest electronic devices easily accessible to everyone</p>
                     </div>
-                </div>
-                <div class="container copy-right-box">
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-3 "><span class="copy-right">&copy; 2025 by AmyAccessory</span></div>
-                        </div>
-                        <!-- <div class="col-12 col-lg-3 col-md-3">
-                        <h3 class="mt-4 text-capitalize">Socail media</h3>
-                    </div> -->
+                    <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
+                        <h3 class=" text-capitalize  footer-header">Menu</h3>
+                        <ul>
+                            <li class="footer-list footer-list2"><a href="/shop.html" class="footer-link">Shop</a>
+                            </li>
+                            <li class="footer-list"><a href="/Mobile.html" class="footer-link">Mobile</a></li>
+                            <li class="footer-list"><a href="/Computers.html" class="footer-link">Computers</a></li>
+                            <li class="footer-list"><a href="/Accessories.html" class="footer-link">Accessories</a>
+                            </li>
+                            <li class="footer-list"><a href="/contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-5 col-md-5 footer-container">
+                        <h3 class=" text-capitalize  footer-header">INFO</h3>
+                        <ul>
+                            <li class="footer-list footer-list2">Address: Kwankwashe Street, opposite IBB market
+                                Niger</li>
+                            <li class="footer-list">State: Niger State</li>
+                            <li class="footer-list">Email: amyogechi@gmail.com</li>
+                            <li class="footer-list">Phone: +234-812-099-1981</li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="container copy-right-box">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-3 "><span class="copy-right">&copy; 2025 by AmyAccessory</span></div>
+                    </div>
+                    <!-- <div class="col-12 col-lg-3 col-md-3">
+                    <h3 class="mt-4 text-capitalize">Socail media</h3>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
+
+    <script src="/index.js"></script>
 </body>
 
 </html>

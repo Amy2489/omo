@@ -16,6 +16,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
     <style>
+        /* background container */
         * {
             margin: 0PX;
             padding: 0PX;
@@ -29,6 +30,8 @@
         .background {
             background-color: black;
         }
+
+        /* navbar */
 
         nav {
             background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
@@ -120,18 +123,13 @@
             color: orange;
         }
 
+        /* main container */
+
         .main-container {
             width: 100%;
         }
 
-        /* .img-item {
-            height: auto;
-            object-fit: cover;
-            width: 100%;
-            border-radius: 10px;
-            border: 5px solid orange;
-            background-color: hsla(0, 0%, 100%, 0.59);
-        } */
+        /* produt image */
         .img-item {
             height: 350px;
             width: 100%;
@@ -164,6 +162,8 @@
             font-size: 17px;
             color: white;
         }
+
+        /* footer */
 
         footer {
             margin-top: 150px;
@@ -225,6 +225,8 @@
             height: 80px;
             margin-top: 50px;
         }
+
+        /* css Responsiveness */
 
         @media (max-width:780px) {
             .main-links {
@@ -339,10 +341,12 @@
 </head>
 
 <body>
-    <div class="container-fliud background">
+    <!-- background container -->
+    <div class="container-fliud background" id="top">
+        <!-- nav bar- menue -->
         <nav class="navbar navbar-expand-md sticky-top">
             <div class="container-xxl">
-                <a href="index.html" id="top" class="nav-brand nav-logo">
+                <a href="index.html" class="nav-brand nav-logo">
                     <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
                 </a>
 
@@ -394,6 +398,7 @@
                 </div>
             </div>
         </nav>
+        <!-- main -->
         <main>
             <section class="mt-4">
                 <div class="container-fliud">
@@ -408,6 +413,7 @@
                                 <li class="main-list"><a href="contact.html" class="main-links">Contact</a></li>
                             </ul>
                         </div>
+                        <!-- products cointainer -->
                         <div class="col-lg-10 col-md-9 col-sm-8 col-8 mt-3">
                             <div class="container-fliud">
                                 <span class="fs-4 text-light">No produts(8)</span>
@@ -415,7 +421,8 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5 ">
                                         <div class="img-container">
                                             <a href="/each-products/OPPO Find X7 Ultra.html"> <img
-                                                    src="image/oppo amy special.jpg" class="img-item" alt=""></a>
+                                                    src="image/oppo amy special.jpg" class="img-item"
+                                                    alt="OPPO Find X7 Ultra"></a>
                                             <h2 class="text-light">OPPO Find X7 Ultra</h2>
                                             <span><strike>$210</strike><span>-$204</span></span>
                                         </div>
@@ -424,7 +431,7 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/OPPO F25 Pro.html"> <img src="image/oppo.jpg"
-                                                    class="img-item" alt=""></a>
+                                                    class="img-item" alt="OPPO F25 Pro"></a>
                                             <h2 class="text-light">OPPO F25 Pro</h2>
                                             <span><span>$259</span></span>
                                         </div>
@@ -433,7 +440,8 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/Samsung Galaxy A32.html"> <img
-                                                    src="images/samsung.jpg" class="img-item" alt=""></a>
+                                                    src="images/samsung.jpg" class="img-item"
+                                                    alt="Samsung Galaxy A32"></a>
                                             <h2 class="text-light"> Samsung Galaxy A32</h2>
                                             <span><strike>$1010</strike><span>-$109.44</span></span>
                                         </div>
@@ -441,7 +449,8 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/Oppo Reno 13 Pro.html"><img
-                                                    src="image/PHONE- (1).jpg" class="img-item" alt=""></a>
+                                                    src="image/PHONE- (1).jpg" class="img-item"
+                                                    alt="Oppo Reno 13 Pro"></a>
                                             <h2 class="text-light">Oppo Reno 13 Pro</h2>
                                             <span><strike>$250</strike><span>-$240</span></span>
                                         </div>
@@ -449,7 +458,8 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/Realme 12 X Pro Plus.html"> <img
-                                                    src="image/PHONE- (2).jpg" class="img-item" alt=""></a>
+                                                    src="image/PHONE- (2).jpg" class="img-item"
+                                                    alt="Realme 12 X Pro Plus"></a>
                                             <h2 class="text-light">Realme 12 X Pro Plus</h2>
                                             <span><span>-$275.57</span></span>
                                         </div>
@@ -457,7 +467,8 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/Oppo Find N3 Flip.html"> <img
-                                                    src="image/PHONE- (5).jpg" class="img-item" alt=""></a>
+                                                    src="image/PHONE- (5).jpg" class="img-item"
+                                                    alt="Oppo Find N3 Flip"></a>
                                             <h2 class="text-light">Oppo Find N3 Flip</h2>
                                             <span><strike>$230</strike><span>-$225</span></span>
                                         </div>
@@ -465,7 +476,7 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/iPhone 12 pro.html"> <img src="image/PHONE- (7).jpg"
-                                                    class="img-item" alt=""></a>
+                                                    class="img-item" alt="iPhone 12 pro"></a>
                                             <h2 class="text-light">iPhone 12 pro</h2>
                                             <span>$330</span>
                                         </div>
@@ -473,9 +484,10 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                                         <div class="img-container">
                                             <a href="/each-products/Oppo Reno 10 Pro+.html"> <img
-                                                    src="image/PHONE- (4).jpg" class="img-item" alt=""></a>
+                                                    src="image/PHONE- (4).jpg" class="img-item"
+                                                    alt="Oppo Reno 10 Pro+"></a>
                                             <h2 class="text-light">Oppo Reno 10 Pro+</h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>
+                                            <span>-$120</span>
                                         </div>
                                     </div>
                                 </div>
@@ -485,15 +497,17 @@
                 </div>
             </section>
         </main>
+        <!-- footer -->
         <footer>
-            <!-- footer -->
             <div class="container-fliud footer-img">
                 <div class="container-fliud mx-4">
                     <div class="row">
                         <div class="col-12 col-lg-5 col-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Amy Electronics Accessories</h3>
                             <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
-                                destination for high quality electronic accessories. We stand behind our products with 6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest electronic devices easily accessible to everyone</p>
+                                destination for high quality electronic accessories. We stand behind our products with
+                                6-months guarantee, ensuring you can shop with confidence. Our mission is to make the
+                                latest electronic devices easily accessible to everyone</p>
                         </div>
                         <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Menu</h3>
@@ -503,8 +517,6 @@
                                 <li class="footer-list"><a href="#top" class="footer-link">Mobile</a></li>
                                 <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
                                 <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
-                                </li>
-                                <li class="footer-list"><a href="Appliances.html" class="footer-link">Appliances</a>
                                 </li>
                                 <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
                             </ul>
@@ -516,7 +528,7 @@
                                     Niger</li>
                                 <li class="footer-list">State: Niger State</li>
                                 <li class="footer-list">Email: amyogechi@gmail.com</li>
-                                <li class="footer-list">Phone: 234-812-099-1981</li>
+                                <li class="footer-list">Phone: +234-812-099-1981</li>
 
                             </ul>
                         </div>
@@ -536,14 +548,8 @@
         </footer>
     </div>
 
-
-    <script>
-        let login = document.getElementById('login');
-        let user = document.getElementById('user')
-        user.addEventListener('click', () => {
-            login.classList.toggle('link')
-        })
-    </script>
+    <!-- Javascript linking -->
+    <script src="/index.js"></script>
 </body>
 
 </html>

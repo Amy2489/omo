@@ -1,4 +1,4 @@
-  * {
+   * {
     margin: 0PX;
     padding: 0PX;
   }
@@ -73,7 +73,7 @@
   .img-item {
     height: 500px;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 5px;
     border: 5px solid orange;
     background-color: hsla(0, 0%, 100%, 0.59);
@@ -81,7 +81,7 @@
 
   .redmi-container h4 {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
   }
 
   .product-content {
@@ -302,7 +302,7 @@
     }
 
     .product-content2 {
-      height: 530px;
+      height: 550px;
     }
 
     .label {

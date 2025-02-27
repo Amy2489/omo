@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
-        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -18,12 +13,8 @@
     <title>Shop with Us</title>
     <style>
         body {
-            font-family: "Monomakh", serif;
-            font-weight: 400;
+            font-family: system-ui, -apple-system, sans-serif;
             line-height: 1.6;
-        }
-
-        .background {
             background-color: black;
         }
 
@@ -115,28 +106,13 @@
             width: 100%;
         }
 
-        .set-img-item {
-            height: 350px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-            background-color: hsla(0, 0%, 100%, 0.59);
-        }
-
-        .set-img-item:hover {
-            transform: scale(102%);
-            transition-duration: 1s;
-            cursor: pointer;
-            border-radius: 1px;
-        }
-
         .img-item {
             height: 350px;
             width: 100%;
-            object-fit: cover;
+            object-fit:contain;
             border-radius: 10px;
             border: 5px solid orange;
-            background-color: hsla(0, 0%, 100%, 0.59);
+            background-color: white;
         }
 
         .left {
@@ -158,23 +134,6 @@
             border-radius: 1px;
         }
 
-        .img-container {
-            border: 3px solid orange;
-            padding: 30px;
-        }
-
-        .img-container h2 {
-            font-size: 17px;
-            font-weight: bolder;
-            margin-top: 10px;
-        }
-
-        .img-container span {
-            font-weight: lighter;
-            font-size: 17px;
-            color: white;
-        }
-
         .shop-more {
             text-decoration: none;
             color: orange;
@@ -183,10 +142,6 @@
         .shop-more:hover {
             font-size: 18px;
             color: orange;
-        }
-
-        .computer {
-            height: 400px;
         }
 
         .line {
@@ -374,225 +329,249 @@
                 margin-left: 0px;
             }
         }
+
+        .img-slide {
+            height: 550px;
+            width: 100%;
+            object-fit: contain;
+           
+        }
+
+        .slide-container {
+            width: 95%;
+            margin: 0px auto;
+            display: block;
+            box-shadow: -8px -6px 15px grey;
+            margin-top: 20px;
+            /* border: 3px solid orange; */
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-fliud background">
-        <nav class="navbar navbar-expand-md sticky-top">
-            <div class="container-xxl">
-                <a href="index.html" id="top" class="nav-brand nav-logo">
-                    <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
-                </a>
+    <div class="container-fliud background" id="top">
+        <div>
+            <nav class="navbar navbar-expand-md sticky-top">
+                <div class="container-xxl">
+                    <a href="index.html" class="nav-brand nav-logo">
+                        <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
+                    </a>
 
-                <button class="navbar-toggler menu-icon" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                    aria-label=" toggler navigation" aria-controls="main-nav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse align-items-center justify-content-center navbar-collapse " id="main-nav">
-                    <div class="ul-list">
-                        <ul class="navbar-nav  d-flex">
-                            <li class="nav-list"><a href="shop.html" class="nav-link a-link ">Shop</a></li>
-                            <li>
-                                <hr class="divider">
-                            </li>
-                            <li class="nav-list"><a href="Mobile.html" class="nav-link a-link ">Mobile</a></li>
-                            <li>
-                                <hr class="divider">
-                            </li>
-                            <li class="nav-list"><a href="Computers.html" class="nav-link a-link ">Computers</a>
-                            </li>
-                            <li>
-                                <hr class="divider">
-                            </li>
-                            <li class="nav-list"><a href="Accessories.html" class="nav-link a-link ">Accessories</a>
-                            </li>
-                            <hr class="divider">
-                            </li>
-                            <li class="nav-list"><a href="contact.html" class="nav-link a-link ">Contact</a></li>
-                            <li>
-                                <hr class="divider">
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- <a href="" class="but-group"><button
-                                class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
-                    <div class="mt-2 mx-lg-5 ">
-                        <i class="fa-solid fa-heart nav-icons p-2"></i>
-                        <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
-                        <i class="fa-solid fa-user nav-icons p-2" id="user"> </i>
-                        <div class="link" id="login">
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="login.html" class="login-link">Login</a></li>
-                                <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign
-                                        In</a>
+                    <button class="navbar-toggler menu-icon" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-label=" toggler navigation" aria-controls="main-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse align-items-center justify-content-center navbar-collapse " id="main-nav">
+                        <div class="ul-list">
+                            <ul class="navbar-nav  d-flex">
+                                <li class="nav-list"><a href="shop.html" class="nav-link a-link ">Shop</a></li>
+                                <li>
+                                    <hr class="divider">
                                 </li>
+                                <li class="nav-list"><a href="Mobile.html" class="nav-link a-link ">Mobile</a></li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+                                <li class="nav-list"><a href="Computers.html" class="nav-link a-link ">Computers</a>
+                                </li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+                                <li class="nav-list"><a href="Accessories.html" class="nav-link a-link ">Accessories</a>
+                                </li>
+                                <hr class="divider">
+                                </li>
+                                <li class="nav-list"><a href="contact.html" class="nav-link a-link ">Contact</a></li>
+                                <li>
+                                    <hr class="divider">
+                                </li>
+
                             </ul>
+                        </div>
+                        <!-- <a href="" class="but-group"><button
+                                    class=" btn btn-outline-dark text-capitalize mx-4">login</button></a> -->
+                        <div class="mt-2 mx-lg-5 ">
+                            <i class="fa-solid fa-heart nav-icons p-2"></i>
+                            <i class="fa-solid fa-cart-shopping nav-icons p-2"></i>
+                            <i class="fa-solid fa-user nav-icons p-2" id="user"> </i>
+                            <div class="link" id="login">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="login.html" class="login-link">Login</a></li>
+                                    <li class="breadcrumb-item text-light"> <a href="sign-up.html"
+                                            class="login-link">Sign
+                                            In</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </nav>
+            <div class="carousel slide-container slide" id="cal" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cal" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#cal" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#cal" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#cal" data-bs-slide-to="3"></button>
+                </div>
+                <!-- the slide -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/image/set-watch .jpg" class="d-block w-100 img-slide" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/apple-tablet.jpg" class="d-block  w-100 img-slide" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/pink iset.jpg" class="d-block  w-100 img-slide" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/image/product-with-set (2).jpg" class="d-block w-100 img-slide" alt="">
+                    </div>
+                </div>
+                <!-- the icon -->
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#cal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button> -->
             </div>
-        </nav>
-        <main>
-            <section class="mt-4">
-                <div class="container-fliud">
-                    <div class="row mx-2 mx-md-1 content-container">
-                        <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                            <ul>
-                                <li class="main-list mt-5"><a href="shop.html" class="main-links shop">Shop</a>
-                                </li>
-                                <li class="main-list"><a href="Mobile.html" class="main-links">Mobile</a></li>
-                                <li class="main-list"><a href="Computers.html" class="main-links">Computers</a></li>
-                                <li class="main-list"><a href="Accessories.html" class="main-links">Accessories</a></li>
-                                <li class="main-list"><a href="contact.html" class="main-links">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-10 col-md-9 col-sm-8 col-8 mt-3">
-                            <div class="container-fliud">
-                                <span class="fs-4 text-light">Produts with a set</span>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/set1.html"> <img
-                                                    src="image/product-with-set (2).jpg" class="set-img-item"
-                                                    alt=""></a>
-                                            <h2 class="text-light">Oppo Find N3 Flip</h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/set2.html"> <img src="image/set-watch .jpg"
-                                                    class="set-img-item" alt=""></a>
-                                            <h2 class="text-light">Oppo Find N3 Flip</h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/set3.html"> <img src="images/pink iset.jpg"
-                                                    class="set-img-item" alt=""></a>
-                                            <h2 class="text-light">Oppo Find N3 Flip</h2>
-                                            <span><strike>$00000</strike><span>-$0000</span></span>
-                                        </div>
+            <main>
+                <section class="mt-4">
+                    <div class="container-fliud">
+                        <div class="mx-4 content-container">
+                            <!-- <span class="fs-4 text-light">Produts with set</span>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/set1.html"> <img src="image/product-with-set (2).jpg"
+                                            class="img-item" alt=""></a>
+                                    <div>
+                                        <h2 class="text-light">ipone</h2>
                                     </div>
                                 </div>
-                                <hr class="text-light line mt-5">
-                                <div class="row">
-                                    <span class="fs-4 text-light left">Mobile Phone Products</span>
-                                    <span class="right"><a href="Mobile.html"><button class="btn shop-more">[Discover
-                                                More]</button></a></span>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/redmi.html"><img src="image/redmi.jpg" class="img-item"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/oppo.html"> <img src="image/oppo.jpg" class="img-item"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/oppox7.html"> <img src="image/oppo x7.jpg"
-                                                class="img-item" alt=""></a>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/set2.html"> <img src="image/set-watch .jpg" class="img-item"
+                                            alt=""></a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/set3.html"> <img src="images/pink iset.jpg" class="img-item"
+                                            alt=""></a>
+                                </div>
+                            </div> -->
+                            <hr class="text-light line mt-5">
+                            <div class="row">
+                                <span class="fs-4 text-light left">Mobile Phone Products</span>
+                                <span class="right"><a href="Mobile.html"><button class="btn shop-more">[Discover
+                                            More]</button></a></span>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/redmi.html"><img src="image/redmi.jpg" class="img-item"
+                                            alt=""></a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/oppo.html"> <img src="image/oppo.jpg" class="img-item"
+                                            alt=""></a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/oppox7.html"> <img src="image/oppo x7.jpg" class="img-item"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <hr class="text-light line mt-5">
+                            <div class="row">
+                                <span class="fs-4 text-light left">Computer Devices</span>
+                                <span class="right"><a href="Computers.html"><button class="btn shop-more">[Discover
+                                            More]</button></a></span>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+                                    <div class="img-container ">
+                                        <a href="/each-products/Apple iPad Pro.html"> <img src="image/tablet-1.jpg"
+                                                class="img-item" alt="Apple iPad Pro and Keyboard"></a>
                                     </div>
                                 </div>
-                                <hr class="text-light line mt-5">
-                                <div class="row">
-                                    <span class="fs-4 text-light left">Computer Devices</span>
-                                    <span class="right"><a href="Computers.html"><button class="btn shop-more">[Discover
-                                                More]</button></a></span>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/hp3.html"> <img src="image/laptops- (5).jpg"
-                                                class="img-item computer" alt=""></a>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
-                                        <a href="/each-products/apple-coloured-laptop.html"> <img
-                                                src="image/laptops- (6).jpg" class="img-item computer" alt=""></a>
-                                    </div>
-                                </div>
-                                <hr class="text-light line mt-5">
-                                <div class="row">
-                                    <div class="row">
-                                        <span class="fs-4 text-light left">Other Accessories</span>
-                                        <span class="right"><a href="Accessories.html"><button
-                                                    class="btn shop-more">[Discover More]</button></a></span>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                            <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
-                                                    class="img-item" alt=""></a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                            <a href="/each-products/earbud2.html"> <img src="image/accessories (1).jpg"
-                                                    class="img-item" alt=""></a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                            <a href="/each-products/charger2.html"><img src="image/accessories (3).jpg"
-                                                    class="img-item" alt=""></a>
-                                        </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+                                    <div class="img-container ">
+                                        <a href="/each-products/SAMSUNG-Book3-Pro .html"> <img
+                                                src="image/laptops- (8).jpg" class="img-item"
+                                                alt="SAMSUNG Galaxy Book3 Pro"></a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-            </section>
-        </main>
-        <footer>
-            <!-- footer -->
-            <div class="container-fliud footer-img">
-                <div class="container-fliud mx-4">
-                    <div class="row">
-                        <div class="col-12 col-lg-5 col-md-5 footer-container">
-                            <h3 class=" text-capitalize  footer-header">Amy Electronics Accessories</h3>
-                            <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
-                                destination for high quality electronic accessories. We stand behind our products with 6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest electronic devices easily accessible to everyone</p>
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
-                            <h3 class=" text-capitalize  footer-header">Menu</h3>
-                            <ul>
-                                <li class="footer-list footer-list2"><a href="#top" class="footer-link">Shop</a>
-                                </li>
-                                <li class="footer-list"><a href="Mobile.html" class="footer-link">Mobile</a></li>
-                                <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
-                                <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
-                                </li>
-                                <li class="footer-list"><a href="Appliances.html" class="footer-link">Appliances</a>
-                                </li>
-                                <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-5 col-md-5 footer-container">
-                            <h3 class=" text-capitalize  footer-header">INFO</h3>
-                            <ul>
-                                <li class="footer-list footer-list2">Address: Kwankwashe Street, opposite IBB market
-                                    Niger</li>
-                                <li class="footer-list">State: Niger State</li>
-                                <li class="footer-list">Email: amyogechi@gmail.com</li>
-                                <li class="footer-list">Phone: 234-812-099-1981</li>
-
-                            </ul>
-                        </div>
+                            <hr class="text-light line mt-5">
+                            <div class="row">
+                                <span class="fs-4 text-light left">Other Accessories</span>
+                                <span class="right"><a href="Accessories.html"><button class="btn shop-more">[Discover
+                                            More]</button></a></span>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
+                                            class="img-item" alt=""></a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/earbud2.html"> <img src="image/accessories (1).jpg"
+                                            class="img-item" alt=""></a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                                    <a href="/each-products/charger2.html"><img src="image/accessories (3).jpg"
+                                            class="img-item" alt=""></a>
+                                </div>
+                            </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <!-- footer -->
+        <div class="container-fliud footer-img">
+            <div class="container-fliud mx-4">
+                <div class="row">
+                    <div class="col-12 col-lg-5 col-md-5 footer-container">
+                        <h3 class=" text-capitalize  footer-header">Amy Electronics Accessories</h3>
+                        <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
+                            destination for high quality electronic accessories. We stand behind our products with 6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest electronic devices easily accessible to everyone</p>
                     </div>
-                </div>
-                <div class="container copy-right-box">
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-3 "><span class="copy-right">&copy; 2025 by AmyAccessory</span></div>
-                        </div>
-                        <!-- <div class="col-12 col-lg-3 col-md-3">
-                        <h3 class="mt-4 text-capitalize">Socail media</h3>
-                    </div> -->
+                    <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
+                        <h3 class=" text-capitalize  footer-header">Menu</h3>
+                        <ul>
+                            <li class="footer-list footer-list2"><a href="#top" class="footer-link">Shop</a>
+                            </li>
+                            <li class="footer-list"><a href="Mobile.html" class="footer-link">Mobile</a></li>
+                            <li class="footer-list"><a href="Computers.html" class="footer-link">Computers</a></li>
+                            <li class="footer-list"><a href="Accessories.html" class="footer-link">Accessories</a>
+                            </li>
+                            <li class="footer-list"><a href="contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-5 col-md-5 footer-container">
+                        <h3 class=" text-capitalize  footer-header">INFO</h3>
+                        <ul>
+                            <li class="footer-list footer-list2">Address: Kwankwashe Street, opposite IBB market
+                                Niger</li>
+                            <li class="footer-list">State: Niger State</li>
+                            <li class="footer-list">Email: amyogechi@gmail.com</li>
+                            <li class="footer-list">Phone: +234-812-099-1981</li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="container copy-right-box">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-3 "><span class="copy-right">&copy; 2025 by AmyAccessory</span></div>
+                    </div>
+                    <!-- <div class="col-12 col-lg-3 col-md-3">
+                    <h3 class="mt-4 text-capitalize">Socail media</h3>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 
 
-    <script>
-        let login = document.getElementById('login');
-        let user = document.getElementById('user')
-        user.addEventListener('click', () => {
-            login.classList.toggle('link')
-        })
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

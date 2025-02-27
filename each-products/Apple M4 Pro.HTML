@@ -15,330 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
-    <style>
-        * {
-            margin: 0PX;
-            padding: 0PX;
-        }
-
-        body {
-            font-family: "Monomakh", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .background {
-            background: black;
-        }
-
-        nav {
-            background-image: linear-gradient(to left, hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(240, 100%, 50%, 0.811), hsla(0, 0%, 0%, 0.791));
-        }
-
-        .menu-icon {
-            color: orange;
-        }
-
-        .nav-logo {
-            text-decoration: none;
-            font-size: 25px;
-            font-style: oblique;
-        }
-
-        .nav-list {
-            width: 100%;
-        }
-
-        .a-link {
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .a-link:hover {
-            color: orange;
-            font-size: 18px;
-            text-decoration: underline;
-        }
-
-        .link {
-            display: none;
-        }
-
-        .login-link {
-            font-size: 15px;
-            color: white;
-        }
-
-        .login-link:hover {
-            color: orange;
-        }
-
-        .ul-list {
-            width: 60%;
-            margin-left: 100px;
-        }
-
-        .nav-icons:hover {
-            color: white;
-        }
-
-        .img-content {
-            padding: 0px 70px;
-        }
-
-        .img-item {
-            height: 500px;
-            width: 100%;
-            object-fit: contain;
-            border-radius: 5px;
-            border: 5px solid orange;
-            background-color: hsla(0, 0%, 100%, 0.59);
-        }
-
-        .redmi-container h4 {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .product-content {
-            height: 600px;
-            margin-top: 20px;
-        }
-
-        .label {
-            display: flex;
-            justify-content: center;
-            margin: 25px 0px;
-        }
-
-        .content p {
-            font-size: 18px;
-            color: rgb(190, 187, 187);
-        }
-
-        .content span {
-            font-size: 20px;
-            color: rgb(190, 187, 187);
-        }
-
-        .cart-button a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .footer-img {
-            background-color: hsla(0, 0%, 50%, 0.169);
-            height: auto;
-            color: lightgrey;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .footer-header {
-            margin: 50px 30px 0px 30px
-        }
-
-        .footer-list {
-            list-style-type: none;
-            color: lightgrey;
-            line-height: 40px;
-            font-size: 18px;
-            font-weight: lighter;
-        }
-
-        .footer-list2 {
-            margin-top: 40px;
-        }
-
-        .footer-paraghap-list {
-            color: lightgrey;
-            line-height: 40px;
-            width: 80%;
-            margin-left: 20px;
-        }
-
-        .footer-link {
-            color: lightgrey;
-            line-height: 40px;
-            font-size: 18px;
-            font-weight: lighter;
-            text-decoration: none;
-        }
-
-
-        .footer-link:hover {
-            color: orange;
-        }
-
-        .copy-right {
-            display: flex;
-            justify-content: end;
-            font-weight: bold;
-
-        }
-
-        .copy-right-box {
-            height: 80px;
-            margin-top: 50px;
-        }
-
-        @media (max-width:950px) {
-            .img-content {
-                padding: 0px 5px;
-            }
-        }
-
-        @media (max-width:780px) {
-            .footer-list {
-                line-height: 30px;
-                font-size: 16px;
-            }
-
-            .footer-paraghap-list {
-                line-height: 30px;
-            }
-
-            .footer-link {
-                line-height: 30px;
-                font-size: 16px;
-            }
-
-            .img-content {
-                padding: 0px 50px;
-            }
-
-            .footer-header {
-                font-size: 20px;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width:765px) {
-
-            .footer-link {
-                line-height: 27px;
-                font-size: 16px;
-            }
-
-            .footer-header {
-                font-size: 18px;
-                font-weight: bolder;
-                margin-top: 15px;
-            }
-
-            .footer-list2 {
-                margin-top: 10px;
-            }
-
-            .product-content {
-                height: 400px;
-                margin-top: 20px;
-            }
-
-            .img-item {
-                height: 400px;
-            }
-        }
-
-        @media (max-width:762px) {
-            .product-content2 {
-                height: 550px;
-            }
-        }
-
-        @media (max-width:444px) {
-            .product-content2 {
-                height: 600px;
-            }
-        }
-
-        @media (max-width:400px) {
-            .footer-list {
-                line-height: 25px;
-                font-size: 14px;
-            }
-
-            .footer-paraghap-list {
-                line-height: 25px;
-            }
-
-            .footer-link {
-                line-height: 25px;
-                font-size: 14px;
-            }
-
-            .footer-header {
-                font-size: 18px;
-                font-weight: bolder;
-                margin-top: 15px;
-            }
-
-            .footer-list2 {
-                margin-top: 12px;
-            }
-
-            .img-item {
-                height: 350px;
-            }
-
-            .img-content {
-                padding: 0px 20px;
-            }
-
-            .product-content {
-                height: 350px;
-                margin-top: 8px;
-            }
-
-            .product-content2 {
-                height: 500px;
-            }
-
-            .label {
-                margin: 5px 0px;
-                font-size: 15px;
-                display: flex;
-                justify-content: start;
-            }
-
-            .content p {
-                font-size: 14px;
-            }
-
-            .content span {
-                font-size: 14px;
-            }
-        }
-
-        @media (max-width:342px) {
-            .product-content {
-                height: 350px;
-                margin-top: 8px;
-            }
-
-            .product-content2 {
-                height: 530px;
-            }
-
-            .label {
-                margin: 5px 0px;
-                font-size: 15px;
-                display: flex;
-                justify-content: start;
-            }
-
-            .content p {
-                font-size: 14px;
-            }
-
-            .content span {
-                font-size: 14px;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
@@ -412,22 +89,16 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12 content product-content product-content2">
                             <p>
                                 <!-- DESCRIPTIONS -->
-                                Brand: OPPO <br>
-                                Operating System: ColorOS (based on Android) <br>
-                                RAM Memory Installed Size: <br>
-                                - 12GB/16GB LPDDR5X RAM <br>
-                                - Extended RAM capability <br>
-                                CPU Model: Qualcomm Snapdragon 8 Gen 3 <br>
-                                CPU Speed: Up to 3.3 GHz <br>
-                                Memory Storage Capacity:
-                                - 256GB/512GB UFS 4.0 storage <br>
-                                Screen Size: 6.82 inches <br>
-                                Resolution: QHD+ (3168 x 1440 pixels) <br>
-                                Refresh Rate: 120Hz LTPO <br>
-                                Model Name: Find X7 Ultra.
+                                CPU: M3 Pro/M3 Max <br>
+                                RAM: 16GB to 96GB <br>
+                                Storage: 512GB to 8TB SSD <br>
+                                Screen: 14.2" or 16.2" Liquid Retina XDR <br>
+                                Resolution: 3024 x 1964 (14.2") or 3456 x 2234 (16.2") <br>
+                                Refresh Rate: 120Hz <br>
+                                Battery Life: Up to 18-22 hours <br>
                             </p>
                             <!-- PRICE -->
-                            <span>(-13%) <span class="price">$00000</span></span>
+                            <span>(-13%) <span class="price">$330</span></span>
                             <p style="font-size:16px;">shipping fee $10</p>
 
                             <!-- CART BUTTONS -->
@@ -437,7 +108,6 @@
                                         href="/sign-up.html">Cart</a></button><br>
                                 <button id="button" class="btn btn-sm btn-light">Quantity</button>
                                 <button id="button1" class="btn btn-sm btn-light">Add</button>
-                                <button id="button2" class="btn btn-sm btn-light">+1</button>
                                 <button id="button3" class="btn btn-sm btn-light">Reset Cart</button>
                             </div>
                         </div>
@@ -477,7 +147,7 @@
                                     Niger</li>
                                 <li class="footer-list">State: Niger State</li>
                                 <li class="footer-list">Email: amyogechi@gmail.com</li>
-                                <li class="footer-list">Phone: 234-812-099-1981</li>
+                                <li class="footer-list">Phone: +234-812-099-1981</li>
 
                             </ul>
                         </div>
