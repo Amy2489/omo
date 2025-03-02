@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
+    <script src="jquer.min.js"></script>
     <title>Computers</title>
     <style>
         .background {
@@ -312,6 +313,20 @@
                 margin-left: 0px;
             }
         }
+        .slide-cart{
+            display: none;
+            /* position: relative;
+            right:0px; */
+            width:50%;
+            float: right;
+            background-color: blue;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+         .slide-cart span:hover{
+            color: rgb(229, 209, 170);
+         }
     </style>
 </head>
 
@@ -394,59 +409,60 @@
                                 <div class="row">
 
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container ">
-                                            <a href="/each-products/Apple iPad Pro.html"> <img src="image/tablet-1.jpg"
-                                                    class="img-item" alt="Apple iPad Pro and Keyboard"></a>
+                                        <div class="img-container" id="slide-container">
+                                           <img src="image/tablet-1.jpg" class="img-item" alt="Apple iPad Pro and Keyboard">
                                             <h2 class="text-light"> Apple iPad Pro and Keyboard</h2>
-                                            <span><strike>$310</strike><span>-$300</span></span>
+                                            <span><strike>$310</strike></span><span>-$300</span>
+                                            <a href="/each-products/Apple iPad Pro.html" class="slide-cart" id="slide-cart"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/desktop-monitor.html"> <img
-                                                    src="image/desktop monitor.webp" class="img-item" alt="Desktop Monitor"></a>
+                                        <div class="img-container" id="slide-container2">
+                                           <img  src="image/desktop monitor.webp" class="img-item" alt="Desktop Monitor">
                                             <h2 class="text-light">Desktop Monitor</h2>
                                             <span>$280</span>
+                                            <a href="/each-products/desktop-monitor.html" class="slide-cart" id="slide-cart2"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/MacBook Pro.html"><img
-                                                    src="image/laptop (1).jpeg" class="img-item" alt="MacBook Pro"></a>
+                                        <div class="img-container" id="slide-container3">
+                                           <img src="image/laptop (1).jpeg" class="img-item" alt="MacBook Pro">
                                             <h2 class="text-light"> MacBook Pro</h2>
                                             <span>$350</span>
+                                            <a href="/each-products/MacBook Pro.html" class="slide-cart" id="slide-cart3"><span>Add Cart</span></a>
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/Apple M4 Pro.HTML"> <img src="image/laptop-avi (4).jpg"
-                                                    class="img-item" alt="Apple M4 Pro"></a>
+                                        <div class="img-container" id="slide-container4">
+                                           <img src="image/laptop-avi (4).jpg" class="img-item" alt="Apple M4 Pro">
                                             <h2 class="text-light">Apple M4 Pro</h2>
                                             <span>$330</span>
+                                            <a href="/each-products/Apple M4 Pro.HTML" class="slide-cart" id="slide-cart4"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/Microsoft  Laptop.html"> <img src="image/laptops- (5).jpg"
-                                                    class="img-item" alt="Microsoft Surface Laptop 3"></a>
+                                        <div class="img-container" id="slide-container5">
+                                           <img src="image/laptops- (5).jpg" class="img-item" alt="Microsoft Surface Laptop 3">
                                             <h2 class="text-light"> Microsoft Surface Laptop 3</h2>
                                             <span><strike>$290</strike><span>-$270</span></span>
+                                            <a href="/each-products/Microsoft  Laptop.html" class="slide-cart" id="slide-cart5"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/MacIntel-Core-i5.html"> <img src="image/laptops- (6).jpg"
-                                                    class="img-item" alt="MacBook Air 13 Intel Core i5"></a>
+                                        <div class="img-container" id="slide-container6">
+                                            <img src="image/laptops- (6).jpg" class="img-item" alt="MacBook Air 13 Intel Core i5">
                                             <h2 class="text-light"> MacBook Air 13 Intel Core i5</h2>
                                             <span><strike>$390</strike><span>-$360</span></span>
+                                            <a href="/each-products/MacIntel-Core-i5.html" class="slide-cart" id="slide-cart6"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/SAMSUNG-Book3-Pro .html"> <img src="image/laptops- (8).jpg"
-                                                    class="img-item" alt="SAMSUNG Galaxy Book3 Pro"></a>
+                                        <div class="img-container" id="slide-container7">
+                                            <img src="image/laptops- (8).jpg" class="img-item" alt="SAMSUNG Galaxy Book3 Pro">
                                             <h2 class="text-light">SAMSUNG Galaxy Book3 Pro </h2>
                                             <span>$300</span>
+                                            <a href="/each-products/SAMSUNG-Book3-Pro .html" class="slide-cart" id="slide-cart7"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -512,6 +528,63 @@
         user.addEventListener('click', () => {
             login.classList.toggle('link')
         })
+
+        
+        $('#slide-container').mouseleave(function(){
+            $('#slide-cart').hide(500);
+        })
+        $('#slide-container').mouseenter(function(){
+            $('#slide-cart').css({'display':'flex'})
+            $('#slide-cart').show(500);   
+        })
+
+        $('#slide-container2').mouseleave(function(){
+            $('#slide-cart2').hide(500);
+        }) 
+        $('#slide-container2').mouseenter(function(){
+            $('#slide-cart2').css({'display':'flex'})
+            $('#slide-cart2').show(500);   
+        })
+
+        $('#slide-container3').mouseleave(function(){
+            $('#slide-cart3').hide(500);
+        })
+        $('#slide-container3').mouseenter(function(){
+            $('#slide-cart3').css({'display':'flex'})
+            $('#slide-cart3').show(500);
+        })
+        $('#slide-container4').mouseleave(function(){
+            $('#slide-cart4').hide(500);
+        })
+        $('#slide-container4').mouseenter(function(){
+            $('#slide-cart4').css({'display':'flex'})
+            $('#slide-cart4').show(500);
+        })
+
+        $('#slide-container5').mouseleave(function(){
+            $('#slide-cart5').hide(500);
+        })
+        $('#slide-container5').mouseenter(function(){
+            $('#slide-cart5').css({'display':'flex'})
+            $('#slide-cart5').show(500);
+        })
+
+        $('#slide-container6').mouseleave(function(){
+            $('#slide-cart6').hide(500);
+        })
+        $('#slide-container6').mouseenter(function(){
+            $('#slide-cart6').css({'display':'flex'})
+            $('#slide-cart6').show(500);
+        })
+
+        $('#slide-container7').mouseleave(function(){
+            $('#slide-cart7').hide(500);
+        })
+        $('#slide-container7').mouseenter(function(){
+            $('#slide-cart7').css({'display':'flex'})
+            $('#slide-cart7').show(500);
+        })
+
     </script>
 </body>
 

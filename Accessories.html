@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
+    <script src="jquer.min.js"></script>
     <title>Accessories</title>
     <style>
         .background {
@@ -140,6 +141,22 @@
             transition-duration: 1s;
             cursor: pointer;
             border-radius: 1px;
+        }
+
+        .slide-cart {
+            display: none;
+            /* position: relative;
+            right:0px; */
+            width: 50%;
+            float: right;
+            background-color: blue;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .slide-cart span:hover {
+            color: rgb(229, 209, 170);
         }
 
         footer {
@@ -318,7 +335,7 @@
     <div class="background" id="Top">
         <nav class="navbar navbar-expand-md sticky-top">
             <div class="container-xxl">
-                <a href="index.html"  class="nav-brand nav-logo">
+                <a href="index.html" class="nav-brand nav-logo">
                     <span class="text-light"><span style="color:orange;">Amy</span>Accessory</span>
                 </a>
 
@@ -362,7 +379,8 @@
                         <div class="link" id="login">
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="login.html" class="login-link">Login</a></li>
-                                <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign In</a>
+                                <li class="breadcrumb-item text-light"> <a href="sign-up.html" class="login-link">Sign
+                                        In</a>
                                 </li>
                             </ul>
                         </div>
@@ -390,99 +408,118 @@
                                 <span class="fs-4 text-light">No produts(12)</span>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/PS4.html"> <img src="image/pad.jpg"
-                                                    class="img-item" alt="PS4 DualShock 4 Wireless Controller"></a>
+                                        <div class="img-container" id="slide-container">
+                                            <img src="image/pad.jpg" class="img-item"
+                                                alt="PS4 DualShock 4 Wireless Controller">
                                             <h2 class="text-light">PS4 DualShock Controller</h2>
-                                            <span><span>-$114</span></span>
+                                            <span>-$114</span>
+                                            <a href="/each-products/PS4.html" class="slide-cart"
+                                                id="slide-cart"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/headphone.html"> <img src="image/headphone.jpg"
-                                                    class="img-item" alt="wireless Bluetooth over-ear headphones"></a>
+                                        <div class="img-container" id="slide-container2">
+                                            <img src="image/headphone.jpg" class="img-item"
+                                                alt="wireless Bluetooth over-ear headphones">
                                             <h2 class="text-light">wireless Bluetooth headphones</h2>
                                             <span><span>$130</span></span>
+                                            <a href="/each-products/headphone.html" class="slide-cart"
+                                                id="slide-cart2"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/Apple AirPods.html"> <img src="images/pod3,1.webp"
-                                                    class="img-item" alt="Apple AirPods"></a>
+                                        <div class="img-container" id="slide-container3">
+                                            <img src="images/pod3,1.webp" class="img-item" alt="Apple AirPods">
                                             <h2 class="text-light">Apple AirPods</h2>
                                             <span><span>$150</span></span>
+                                            <a href="/each-products/Apple AirPods.html" class="slide-cart"
+                                                id="slide-cart3"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/mouse1.html"> <img src="images/mouse2,1.webp"
-                                                    class="img-item" alt="Wireless Mouse"></a>
+                                        <div class="img-container" id="slide-container4">
+                                            <img src="images/mouse2,1.webp" class="img-item" alt="Wireless Mouse">
                                             <h2 class="text-light">Wireless Mouse</h2>
                                             <span><span>$50</span></span>
+                                            <a href="/each-products/mouse1.html" class="slide-cart"
+                                                id="slide-cart4"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/charger2.html"><img src="image/accessories (3).jpg"
-                                                    class="img-item" alt="Wireless iphone Charger"></a>
+                                        <div class="img-container" id="slide-container5">
+                                            <img src="image/accessories (3).jpg" class="img-item"
+                                                alt="Wireless iphone Charger">
                                             <h2 class="text-light">Wireless iphone Charger</h2>
-                                            <span><span>$45</span></span>
+                                            <span>$45</span>
+                                            <a href="/each-products/charger2.html" class="slide-cart"
+                                                id="slide-cart5"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/Amazon Echo Dot.html"> <img src="image/jambx.jpg"
-                                                    class="img-item" alt="Amazon Echo Dot"></a>
+                                        <div class="img-container" id="slide-container6">
+                                            <img src="image/jambx.jpg" class="img-item" alt="Amazon Echo Dot">
                                             <h2 class="text-light">Amazon Echo Dot</h2>
                                             <span>$108</span>
+                                            <a href="/each-products/Amazon Echo Dot.html" class="slide-cart"
+                                                id="slide-cart6"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/mouse2.html"> <img src="image/black mouse.jpg"
-                                                    class="img-item" alt="USB Wired Computer Mouse Mice"></a>
+                                        <div class="img-container" id="slide-container7">
+                                            <img src="image/black mouse.jpg" class="img-item"
+                                                alt="USB Wired Computer Mouse Mice">
                                             <h2 class="text-light">USB Computer Mouse</h2>
                                             <span><span>$13</span></span>
+                                            <a href="/each-products/mouse2.html" class="slide-cart"
+                                                id="slide-cart7"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/camera1.html"> <img src="images/cam1,1.webp"
-                                                    class="img-item" alt="Instant Print Digital Camera"></a>
+                                        <div class="img-container" id="slide-container8">
+                                            <img src="images/cam1,1.webp" class="img-item"
+                                                alt="Instant Print Digital Camera">
                                             <h2 class="text-light">Digital Instant Print Camera</h2>
                                             <span><span>$99</span></span>
+                                            <a href="/each-products/camera1.html" class="slide-cart"
+                                                id="slide-cart8"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/batterybank1.html"> <img
-                                                    src="image/apple batterypack.jpg" class="img-item" alt="Apple MagSafe Battery Pack"></a>
+                                        <div class="img-container" id="slide-container9">
+                                            <img src="image/apple batterypack.jpg" class="img-item"
+                                                alt="Apple MagSafe Battery Pack">
                                             <h2 class="text-light">Apple MagSafe Battery Pack</h2>
                                             <span><span>$75</span></span>
+                                            <a href="/each-products/batterybank1.html" class="slide-cart"
+                                                id="slide-cart9"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/batterybank2.html"> <img
-                                                    src="image/charger (3).jpeg" class="img-item" alt="Hoco CW26 Wireless Charger"></a>
+                                        <div class="img-container" id="slide-container10">
+                                            <img src="image/charger (3).jpeg" class="img-item"
+                                                alt="Hoco CW26 Wireless Charger">
                                             <h2 class="text-light">Hoco CW26 Wireless Charger</h2>
                                             <span><span>$67</span></span>
+                                            <a href="/each-products/batterybank2.html" class="slide-cart"
+                                                id="slide-cart10"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/batterybank3.html"> <img
-                                                    src="image/vrurc 10000mAh bank.jpg" class="img-item" alt=""></a>
+                                        <div class="img-container" id="slide-container11">
+                                            <img src="image/vrurc 10000mAh bank.jpg" class="img-item" alt="">
                                             <h2 class="text-light">Veger VG-W1116 Power Bank</h2>
-                                                <span>$70,000</span>
+                                            <span>$70,000</span>
+                                            <a href="/each-products/batterybank3.html" class="slide-cart"
+                                            id="slide-cart11"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/bluetooth2.html"> <img src="images/bluetooth.jpg"
-                                                    class="img-item" alt=""></a>
+                                        <div class="img-container" id="slide-container12">
+                                          <img src="images/bluetooth.jpg" class="img-item" alt="">
                                             <h2 class="text-light">Portable Bluetooth Speaker</h2>
                                             <span>$52,000</span>
+                                            <a href="/each-products/bluetooth2.html" class="slide-cart"
+                                            id="slide-cart12"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -499,7 +536,9 @@
                         <div class="col-12 col-lg-5 col-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Amy Electronics Accessories</h3>
                             <p class="footer-paraghap-list footer-list2">Welcome to Amy Accessories, your trusted
-                                destination for high quality electronic accessories. We stand behind our products with 6-months guarantee, ensuring you can shop with confidence. Our mission is to make the latest electronic devices easily accessible to everyone</p>
+                                destination for high quality electronic accessories. We stand behind our products with
+                                6-months guarantee, ensuring you can shop with confidence. Our mission is to make the
+                                latest electronic devices easily accessible to everyone</p>
                         </div>
                         <div class="col-12 col-lg-2 col-md-2 fs-md-5 footer-container">
                             <h3 class=" text-capitalize  footer-header">Menu</h3>
@@ -546,6 +585,102 @@
         let user = document.getElementById('user')
         user.addEventListener('click', () => {
             login.classList.toggle('link')
+        })
+
+
+        $('#slide-container').mouseleave(function () {
+            $('#slide-cart').hide(1000);
+        })
+        $('#slide-container').mouseenter(function () {
+            $('#slide-cart').css({ 'display': 'flex' })
+            $('#slide-cart').show(1000);
+        })
+
+        $('#slide-container2').mouseleave(function () {
+            $('#slide-cart2').hide(1000);
+        })
+        $('#slide-container2').mouseenter(function () {
+            $('#slide-cart2').css({ 'display': 'flex' })
+            $('#slide-cart2').show(1000);
+        })
+
+        $('#slide-container3').mouseleave(function () {
+            $('#slide-cart3').hide(1000);
+        })
+        $('#slide-container3').mouseenter(function () {
+            $('#slide-cart3').css({ 'display': 'flex' })
+            $('#slide-cart3').show(1000);
+        })
+        $('#slide-container4').mouseleave(function () {
+            $('#slide-cart4').hide(1000);
+        })
+        $('#slide-container4').mouseenter(function () {
+            $('#slide-cart4').css({ 'display': 'flex' })
+            $('#slide-cart4').show(1000);
+        })
+
+        $('#slide-container5').mouseleave(function () {
+            $('#slide-cart5').hide(1000);
+        })
+        $('#slide-container5').mouseenter(function () {
+            $('#slide-cart5').css({ 'display': 'flex' })
+            $('#slide-cart5').show(1000);
+        })
+
+        $('#slide-container6').mouseleave(function () {
+            $('#slide-cart6').hide(1000);
+        })
+        $('#slide-container6').mouseenter(function () {
+            $('#slide-cart6').css({ 'display': 'flex' })
+            $('#slide-cart6').show(1000);
+        })
+
+        $('#slide-container7').mouseleave(function () {
+            $('#slide-cart7').hide(1000);
+        })
+        $('#slide-container7').mouseenter(function () {
+            $('#slide-cart7').css({ 'display': 'flex' })
+            $('#slide-cart7').show(1000);
+        })
+
+        $('#slide-container8').mouseleave(function () {
+            $('#slide-cart8').hide(1000);
+        })
+        $('#slide-container8').mouseenter(function () {
+            $('#slide-cart8').css({ 'display': 'flex' })
+            $('#slide-cart8').show(1000);
+        })
+
+        $('#slide-container9').mouseleave(function () {
+            $('#slide-cart9').hide(1000);
+        })
+        $('#slide-container9').mouseenter(function () {
+            $('#slide-cart9').css({ 'display': 'flex' })
+            $('#slide-cart9').show(1000);
+        })
+
+        $('#slide-container10').mouseleave(function () {
+            $('#slide-cart10').hide(1000);
+        })
+        $('#slide-container10').mouseenter(function () {
+            $('#slide-cart10').css({ 'display': 'flex' })
+            $('#slide-cart10').show(1000);
+        })
+
+        $('#slide-container11').mouseleave(function () {
+            $('#slide-cart11').hide(1000);
+        })
+        $('#slide-container11').mouseenter(function () {
+            $('#slide-cart11').css({ 'display': 'flex' })
+            $('#slide-cart11').show(1000);
+        })
+
+        $('#slide-container12').mouseleave(function () {
+            $('#slide-cart12').hide(1000);
+        })
+        $('#slide-container12').mouseenter(function () {
+            $('#slide-cart12').css({ 'display': 'flex' })
+            $('#slide-cart12').show(1000);
         })
     </script>
 </body>
