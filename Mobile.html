@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monomakh&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/693dd61249.js" crossorigin="anonymous"></script>
+    <script src="jquer.min.js"></script>
     <style>
         /* background container */
         * {
@@ -336,6 +337,20 @@
                 margin-left: 0px;
             }
         }
+        .slide-cart{
+            display: none;
+            /* position: relative;
+            right:0px; */
+            width:50%;
+            float: right;
+            background-color: blue;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+         .slide-cart span:hover{
+            color: rgb(229, 209, 170);
+         }
     </style>
     <title>Mobiles Phones</title>
 </head>
@@ -419,75 +434,84 @@
                                 <span class="fs-4 text-light">No produts(8)</span>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5 ">
-                                        <div class="img-container">
+                                        <div class="img-container" id="slide-container">
                                             <a href="/each-products/OPPO Find X7 Ultra.html"> <img
                                                     src="image/oppo amy special.jpg" class="img-item"
                                                     alt="OPPO Find X7 Ultra"></a>
                                             <h2 class="text-light">OPPO Find X7 Ultra</h2>
-                                            <span><strike>$210</strike><span>-$204</span></span>
+                                           <strike>$210</strike><span>-$204</span>
+                                           <a href="/each-products/OPPO Find X7 Ultra.html" class="slide-cart" id="slide-cart"><span>Add Cart</span></a>
                                         </div>
 
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5" >
+                                        <div class="img-container" id="slide-container2">
                                             <a href="/each-products/OPPO F25 Pro.html"> <img src="image/oppo.jpg"
                                                     class="img-item" alt="OPPO F25 Pro"></a>
                                             <h2 class="text-light">OPPO F25 Pro</h2>
-                                            <span><span>$259</span></span>
+                                            <span>$259</span>
+                                            <!-- <a href="login.html"><i class="fa-solid fa-cart-shopping nav-icons p-2" id="slide-cart"></i></a> -->
+                                            <a href="/each-products/OPPO F25 Pro.html" class="slide-cart" id="slide-cart2"><span>Add Cart</span></a>
                                         </div>
 
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
-                                            <a href="/each-products/Samsung Galaxy A32.html"> <img
+                                        <div class="img-container" id="slide-container3">
+                                            <a href="/each-products/Samsung Galaxy A32.html" > <img
                                                     src="images/samsung.jpg" class="img-item"
                                                     alt="Samsung Galaxy A32"></a>
                                             <h2 class="text-light"> Samsung Galaxy A32</h2>
-                                            <span><strike>$1010</strike><span>-$109.44</span></span>
+                                            <span>-$109.44</span>
+                                            <a href="/each-products/Samsung Galaxy A32.html" class="slide-cart" id="slide-cart3"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
+                                        <div class="img-container" id="slide-container4">
                                             <a href="/each-products/Oppo Reno 13 Pro.html"><img
                                                     src="image/PHONE- (1).jpg" class="img-item"
                                                     alt="Oppo Reno 13 Pro"></a>
                                             <h2 class="text-light">Oppo Reno 13 Pro</h2>
                                             <span><strike>$250</strike><span>-$240</span></span>
+                                            <a href="/each-products/Oppo Reno 13 Pro.html" class="slide-cart" id="slide-cart4"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
+                                        <div class="img-container" id="slide-container5">
                                             <a href="/each-products/Realme 12 X Pro Plus.html"> <img
                                                     src="image/PHONE- (2).jpg" class="img-item"
                                                     alt="Realme 12 X Pro Plus"></a>
                                             <h2 class="text-light">Realme 12 X Pro Plus</h2>
-                                            <span><span>-$275.57</span></span>
+                                            <span><span>$275.57</span></span>
+                                            <a href="/each-products/Realme 12 X Pro Plus.html" class="slide-cart" id="slide-cart5"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
+                                        <div class="img-container" id="slide-container6">
                                             <a href="/each-products/Oppo Find N3 Flip.html"> <img
                                                     src="image/PHONE- (5).jpg" class="img-item"
                                                     alt="Oppo Find N3 Flip"></a>
                                             <h2 class="text-light">Oppo Find N3 Flip</h2>
                                             <span><strike>$230</strike><span>-$225</span></span>
+                                            <a href="/each-products/Oppo Find N3 Flip.html" class="slide-cart" id="slide-cart6"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
+                                        <div class="img-container" id="slide-container7">
                                             <a href="/each-products/iPhone 12 pro.html"> <img src="image/PHONE- (7).jpg"
                                                     class="img-item" alt="iPhone 12 pro"></a>
                                             <h2 class="text-light">iPhone 12 pro</h2>
                                             <span>$330</span>
+                                            <a href="/each-products/iPhone 12 pro.html" class="slide-cart" id="slide-cart7"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                                        <div class="img-container">
+                                        <div class="img-container" id="slide-container8">
                                             <a href="/each-products/Oppo Reno 10 Pro+.html"> <img
                                                     src="image/PHONE- (4).jpg" class="img-item"
                                                     alt="Oppo Reno 10 Pro+"></a>
                                             <h2 class="text-light">Oppo Reno 10 Pro+</h2>
                                             <span>-$120</span>
+                                            <a href="/each-products/Oppo Reno 10 Pro+.html" class="slide-cart" id="slide-cart8"><span>Add Cart</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -555,6 +579,81 @@
         user.addEventListener('click', () => {
             login.classList.toggle('link')
         })
+
+        // $('#slide-container').mouseenter(function(){
+        //     $('#slide-cart').fadeIn(1000);
+        //     // alert('hello')
+        // })
+        // $('#slide-container').mouseleave(function(){
+        //     $('#slide-cart').fadeOut(1000);
+
+        //     // alert('hello')
+        // })
+
+        $('#slide-container').mouseleave(function(){
+            $('#slide-cart').hide(1000);
+        })
+        $('#slide-container').mouseenter(function(){
+            $('#slide-cart').css({'display':'flex'})
+            $('#slide-cart').show(1000);   
+        })
+
+        $('#slide-container2').mouseleave(function(){
+            $('#slide-cart2').hide(1000);
+        })
+        $('#slide-container2').mouseenter(function(){
+            $('#slide-cart2').css({'display':'flex'})
+            $('#slide-cart2').show(1000);   
+        })
+
+        $('#slide-container3').mouseleave(function(){
+            $('#slide-cart3').hide(1000);
+        })
+        $('#slide-container3').mouseenter(function(){
+            $('#slide-cart3').css({'display':'flex'})
+            $('#slide-cart3').show(1000);
+        })
+        $('#slide-container4').mouseleave(function(){
+            $('#slide-cart4').hide(1000);
+        })
+        $('#slide-container4').mouseenter(function(){
+            $('#slide-cart4').css({'display':'flex'})
+            $('#slide-cart4').show(1000);
+        })
+
+        $('#slide-container5').mouseleave(function(){
+            $('#slide-cart5').hide(1000);
+        })
+        $('#slide-container5').mouseenter(function(){
+            $('#slide-cart5').css({'display':'flex'})
+            $('#slide-cart5').show(1000);
+        })
+
+        $('#slide-container6').mouseleave(function(){
+            $('#slide-cart6').hide(1000);
+        })
+        $('#slide-container6').mouseenter(function(){
+            $('#slide-cart6').css({'display':'flex'})
+            $('#slide-cart6').show(1000);
+        })
+
+        $('#slide-container7').mouseleave(function(){
+            $('#slide-cart7').hide(1000);
+        })
+        $('#slide-container7').mouseenter(function(){
+            $('#slide-cart7').css({'display':'flex'})
+            $('#slide-cart7').show(1000);
+        })
+
+        $('#slide-container8').mouseleave(function(){
+            $('#slide-cart8').hide(1000);
+        })
+        $('#slide-container8').mouseenter(function(){
+            $('#slide-cart8').css({'display':'flex'})
+            $('#slide-cart8').show(1000);
+        })
+
+        
     </script>
 </body>
 
